@@ -4,18 +4,18 @@
 
 targets, factors
 AC_id95,           AC_id95
-LET_23_id1_b1,     1
+LET_23_id1_b1,     true
 LET_23_id1_b2,     LET_23_id1_b1
-LET_23_id25_b1,    1
-LET_23_id25_b2,    0
+LET_23_id25_b1,    true
+LET_23_id25_b2,    false
 LET_23_id35_b1,    LET_23_id35_b1&LET_23_id35_b2
-LET_23_id35_b2,    0
-LET_23_id45_b1,    1
-LET_23_id45_b2,    0
+LET_23_id35_b2,    false
+LET_23_id45_b1,    true
+LET_23_id45_b2,    false
 LET_23_id55_b1,    LET_23_id55_b1&LET_23_id55_b2
-LET_23_id55_b2,    0
+LET_23_id55_b2,    false
 LET_23_id65_b1,    LET_23_id65_b1&LET_23_id65_b2
-LET_23_id65_b2,    0
+LET_23_id65_b2,    false
 LET_60_id29_b1,    !SEM_5_id28_b1&LET_60_id29_b1&LET_60_id29_b2 | SEM_5_id28_b1&!SEM_5_id28_b2&!LET_60_id29_b1&!lst_id33_b1 | SEM_5_id28_b1&!SEM_5_id28_b2&!LET_60_id29_b1&lst_id33_b1&!lst_id33_b2 | SEM_5_id28_b1&!SEM_5_id28_b2&LET_60_id29_b1&!LET_60_id29_b2&!lst_id33_b1 | SEM_5_id28_b1&!SEM_5_id28_b2&LET_60_id29_b1&!LET_60_id29_b2&lst_id33_b1&!lst_id33_b2 | SEM_5_id28_b1&!SEM_5_id28_b2&LET_60_id29_b1&LET_60_id29_b2 | SEM_5_id28_b1&SEM_5_id28_b2
 LET_60_id29_b2,    SEM_5_id28_b1&SEM_5_id28_b2&LET_60_id29_b1
 LET_60_id39_b1,    !SEM_5_id38_b1&LET_60_id39_b1&LET_60_id39_b2 | SEM_5_id38_b1&!SEM_5_id38_b2&!LET_60_id39_b1&!lst_id43_b1 | SEM_5_id38_b1&!SEM_5_id38_b2&!LET_60_id39_b1&lst_id43_b1&!lst_id43_b2 | SEM_5_id38_b1&!SEM_5_id38_b2&LET_60_id39_b1&!LET_60_id39_b2&!lst_id43_b1 | SEM_5_id38_b1&!SEM_5_id38_b2&LET_60_id39_b1&!LET_60_id39_b2&lst_id43_b1&!lst_id43_b2 | SEM_5_id38_b1&!SEM_5_id38_b2&LET_60_id39_b1&LET_60_id39_b2 | SEM_5_id38_b1&SEM_5_id38_b2
@@ -137,17 +137,17 @@ lst_id73_b2,       lin_12_id66_b1&lin_12_id66_b2&!signalact_id67_b1&lst_id73_b1 
 lst_id9_b1,        !lin_12_id2_b1&lst_id9_b1&lst_id9_b2 | lin_12_id2_b1&!signalact_id3_b1 | lin_12_id2_b1&signalact_id3_b1&!signalact_id3_b2 | lin_12_id2_b1&signalact_id3_b1&signalact_id3_b2&lst_id9_b1&lst_id9_b2
 lst_id9_b2,        lin_12_id2_b1&lin_12_id2_b2&!signalact_id3_b1&lst_id9_b1 | lin_12_id2_b1&lin_12_id2_b2&signalact_id3_b1&!signalact_id3_b2&lst_id9_b1
 relsig_id32_b1,    !relsig_id32_b1&!lst_id33_b1&Relay_id90_b1&Relay_id90_b2 | relsig_id32_b1&!relsig_id32_b2&!lst_id33_b1&Relay_id90_b1&Relay_id90_b2 | relsig_id32_b1&relsig_id32_b2
-relsig_id32_b2,    0
+relsig_id32_b2,    false
 relsig_id42_b1,    !relsig_id42_b1&!lst_id43_b1&Relay_id94_b1&Relay_id94_b2 | relsig_id42_b1&!relsig_id42_b2&!lst_id43_b1&Relay_id94_b1&Relay_id94_b2 | relsig_id42_b1&relsig_id42_b2
-relsig_id42_b2,    0
+relsig_id42_b2,    false
 relsig_id52_b1,    !relsig_id52_b1&!lst_id53_b1&Relay_id78_b1&Relay_id78_b2 | relsig_id52_b1&!relsig_id52_b2&!lst_id53_b1&Relay_id78_b1&Relay_id78_b2 | relsig_id52_b1&relsig_id52_b2
-relsig_id52_b2,    0
+relsig_id52_b2,    false
 relsig_id62_b1,    !relsig_id62_b1&!lst_id63_b1&Relay_id82_b1&Relay_id82_b2 | relsig_id62_b1&!relsig_id62_b2&!lst_id63_b1&Relay_id82_b1&Relay_id82_b2 | relsig_id62_b1&relsig_id62_b2
-relsig_id62_b2,    0
+relsig_id62_b2,    false
 relsig_id72_b1,    !relsig_id72_b1&!lst_id73_b1&Relay_id86_b1&Relay_id86_b2 | relsig_id72_b1&!relsig_id72_b2&!lst_id73_b1&Relay_id86_b1&Relay_id86_b2 | relsig_id72_b1&relsig_id72_b2
-relsig_id72_b2,    0
+relsig_id72_b2,    false
 relsig_id8_b1,     !relsig_id8_b1&!lst_id9_b1&Relay_id24_b1&Relay_id24_b2 | relsig_id8_b1&!relsig_id8_b2&!lst_id9_b1&Relay_id24_b1&Relay_id24_b2 | relsig_id8_b1&relsig_id8_b2
-relsig_id8_b2,     0
+relsig_id8_b2,     false
 signal_id30_b1,    !LET_60_id29_b1&signal_id30_b1&signal_id30_b2 | LET_60_id29_b1&!LET_60_id29_b2&!signal_id30_b1&!lst_id33_b1 | LET_60_id29_b1&!LET_60_id29_b2&!signal_id30_b1&lst_id33_b1&!lst_id33_b2 | LET_60_id29_b1&!LET_60_id29_b2&signal_id30_b1&!signal_id30_b2&!lst_id33_b1 | LET_60_id29_b1&!LET_60_id29_b2&signal_id30_b1&!signal_id30_b2&lst_id33_b1&!lst_id33_b2 | LET_60_id29_b1&!LET_60_id29_b2&signal_id30_b1&signal_id30_b2 | LET_60_id29_b1&LET_60_id29_b2
 signal_id30_b2,    LET_60_id29_b1&LET_60_id29_b2&signal_id30_b1
 signal_id40_b1,    !LET_60_id39_b1&signal_id40_b1&signal_id40_b2 | LET_60_id39_b1&!LET_60_id39_b2&!signal_id40_b1&!lst_id43_b1 | LET_60_id39_b1&!LET_60_id39_b2&!signal_id40_b1&lst_id43_b1&!lst_id43_b2 | LET_60_id39_b1&!LET_60_id39_b2&signal_id40_b1&!signal_id40_b2&!lst_id43_b1 | LET_60_id39_b1&!LET_60_id39_b2&signal_id40_b1&!signal_id40_b2&lst_id43_b1&!lst_id43_b2 | LET_60_id39_b1&!LET_60_id39_b2&signal_id40_b1&signal_id40_b2 | LET_60_id39_b1&LET_60_id39_b2

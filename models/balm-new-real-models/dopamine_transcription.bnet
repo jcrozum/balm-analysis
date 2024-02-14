@@ -17,7 +17,7 @@ DRD2_rna,                           !TF_FOXA1_2_complex&!TF_NR4A2_complex&TF_PIT
 DYNC1H1_rna,                        TF_LMX1A_B_complex
 EN1,                                !TF_PITX3_complex
 EN1_rna,                            TF_FOXA1_2_complex
-FOXA2,                              0
+FOXA2,                              false
 FOXO1_rna,                          TF_LMX1A_B_complex
 FOXO3_rna,                          TF_LMX1A_B_complex
 GCH1_rna,                           TF_NR4A2_complex
@@ -27,19 +27,19 @@ KIF1A_rna,                          TF_LMX1A_B_complex
 KLC1_rna,                           TF_LMX1A_B_complex
 LMX1A_rna,                          TF_FOXA1_2_complex
 LMX1B_rna,                          TF_FOXA1_2_complex
-LRRK2,                              0
+LRRK2,                              false
 MAP1B_rna,                          TF_LMX1A_B_complex
 MIR133B_rna,                        TF_PITX3_complex
-NCOR2,                              0
+NCOR2,                              false
 NDUFB8_rna,                         TF_NR4A2_complex
 NKX6_1_rna,                         TF_FOXA1_2_complex
 NR4A2_nucleus,                      !PIAS4&NR4A2_nucleus | PIAS4
 NR4A2_rna,                          !TF_LMX1A_B_complex&TF_FOXA1_2_complex | TF_LMX1A_B_complex
 NRF1_rna,                           TF_LMX1A_B_complex
 PARK7,                              PIAS4
-PBX1,                               0
-PIAS4,                              0
-PIN1,                               0
+PBX1,                               false
+PIAS4,                              false
+PIN1,                               false
 PITX3,                              !PITX3_rna&!MIR133B_rna | PITX3_rna
 PITX3_rna,                          TF_NR4A2_complex
 PRKAA2_rna,                         TF_NR4A2_complex
@@ -50,11 +50,11 @@ SESN3_rna,                          TF_NR4A2_complex
 SFPQ,                               !PARK7
 SLC18A2_rna,                        !TF_FOXA1_2_complex&!TF_NR4A2_complex&TF_PITX3_complex | !TF_FOXA1_2_complex&TF_NR4A2_complex | TF_FOXA1_2_complex
 SLC6A3_rna,                         !TF_FOXA1_2_complex&!TF_NR4A2_complex&TF_PITX3_complex | !TF_FOXA1_2_complex&TF_NR4A2_complex | TF_FOXA1_2_complex
-SNCA,                               0
+SNCA,                               false
 SOD1_rna,                           TF_NR4A2_complex
 TFEB_rna,                           TF_LMX1A_B_complex
-TF_FOXA1_2_complex,                 0
-TF_LMX1A_B_complex,                 0
+TF_FOXA1_2_complex,                 false
+TF_LMX1A_B_complex,                 false
 TF_NR4A2_complex,                   !RXRA&!FOXA2&!PIN1&!PITX3&!SNCA | !RXRA&!FOXA2&!PIN1&!PITX3&SNCA&!NCOR2 | !RXRA&!FOXA2&!PIN1&!PITX3&SNCA&NCOR2&!PIAS4 | !RXRA&!FOXA2&!PIN1&!PITX3&SNCA&NCOR2&PIAS4&NR4A2_nucleus | !RXRA&!FOXA2&!PIN1&PITX3 | !RXRA&!FOXA2&PIN1 | !RXRA&FOXA2 | RXRA
 TF_PITX3_complex,                   !PBX1&!LRRK2 | PBX1
 TH_rna,                             !SFPQ | SFPQ&!TF_FOXA1_2_complex&!TF_NR4A2_complex&TF_PITX3_complex | SFPQ&!TF_FOXA1_2_complex&TF_NR4A2_complex | SFPQ&TF_FOXA1_2_complex
@@ -65,5 +65,5 @@ dopamine_metabolism_phenotype,      !GCH1_rna&!DDC_rna&!SLC18A2_rna&!SLC6A3_rna&
 mitochondrial_biogenesis_phenotype, !NDUFB8_rna&!COX6A1_rna&!COX5A_rna&!COX8A_rna&COX5B_rna | !NDUFB8_rna&!COX6A1_rna&!COX5A_rna&COX8A_rna | !NDUFB8_rna&!COX6A1_rna&COX5A_rna | !NDUFB8_rna&COX6A1_rna | NDUFB8_rna
 neuron_survival_phenotype,          !RET_rna&!BDNF_rna&GDNF_rna | !RET_rna&BDNF_rna | RET_rna
 pacemaking_activity_phenotype,      KCNJ6_rna
-retinoic_acid,                      0
+retinoic_acid,                      false
 retinoic_acid_synthesis_phenotype,  ALDH1A1_rna

@@ -191,14 +191,14 @@ Ligand_in_id45_b1, !Jagged_id25_b1&!Ligand_in_id45_b1&Jagged_id87_b1 | !Jagged_i
 Ligand_in_id45_b2, !Jagged_id25_b1&Ligand_in_id45_b1&!Ligand_in_id45_b2&Jagged_id87_b1&Jagged_id87_b2&Jagged_id87_b3 | !Jagged_id25_b1&Ligand_in_id45_b1&Ligand_in_id45_b2&!Ligand_in_id45_b3&Jagged_id87_b1&Jagged_id87_b2&Jagged_id87_b3 | !Jagged_id25_b1&Ligand_in_id45_b1&Ligand_in_id45_b2&Ligand_in_id45_b3 | Jagged_id25_b1&!Jagged_id25_b2&Ligand_in_id45_b1&!Ligand_in_id45_b2&Jagged_id87_b1&Jagged_id87_b2 | Jagged_id25_b1&!Jagged_id25_b2&Ligand_in_id45_b1&Ligand_in_id45_b2&!Ligand_in_id45_b3&Jagged_id87_b1&Jagged_id87_b2 | Jagged_id25_b1&!Jagged_id25_b2&Ligand_in_id45_b1&Ligand_in_id45_b2&Ligand_in_id45_b3 | Jagged_id25_b1&Jagged_id25_b2&!Jagged_id25_b3&Ligand_in_id45_b1&!Ligand_in_id45_b2&Jagged_id87_b1 | Jagged_id25_b1&Jagged_id25_b2&!Jagged_id25_b3&Ligand_in_id45_b1&Ligand_in_id45_b2&!Ligand_in_id45_b3&Jagged_id87_b1 | Jagged_id25_b1&Jagged_id25_b2&!Jagged_id25_b3&Ligand_in_id45_b1&Ligand_in_id45_b2&Ligand_in_id45_b3 | Jagged_id25_b1&Jagged_id25_b2&Jagged_id25_b3&Ligand_in_id45_b1
 Ligand_in_id45_b3, !Jagged_id25_b1&Ligand_in_id45_b1&Ligand_in_id45_b2&Ligand_in_id45_b3&Ligand_in_id45_b4 | Jagged_id25_b1&!Jagged_id25_b2&Ligand_in_id45_b1&Ligand_in_id45_b2&!Ligand_in_id45_b3&Jagged_id87_b1&Jagged_id87_b2&Jagged_id87_b3&Jagged_id87_b4 | Jagged_id25_b1&!Jagged_id25_b2&Ligand_in_id45_b1&Ligand_in_id45_b2&Ligand_in_id45_b3&!Ligand_in_id45_b4&Jagged_id87_b1&Jagged_id87_b2&Jagged_id87_b3&Jagged_id87_b4 | Jagged_id25_b1&!Jagged_id25_b2&Ligand_in_id45_b1&Ligand_in_id45_b2&Ligand_in_id45_b3&Ligand_in_id45_b4 | Jagged_id25_b1&Jagged_id25_b2&!Jagged_id25_b3&Ligand_in_id45_b1&Ligand_in_id45_b2&!Ligand_in_id45_b3&Jagged_id87_b1&Jagged_id87_b2&Jagged_id87_b3 | Jagged_id25_b1&Jagged_id25_b2&!Jagged_id25_b3&Ligand_in_id45_b1&Ligand_in_id45_b2&Ligand_in_id45_b3&!Ligand_in_id45_b4&Jagged_id87_b1&Jagged_id87_b2&Jagged_id87_b3 | Jagged_id25_b1&Jagged_id25_b2&!Jagged_id25_b3&Ligand_in_id45_b1&Ligand_in_id45_b2&Ligand_in_id45_b3&Ligand_in_id45_b4 | Jagged_id25_b1&Jagged_id25_b2&Jagged_id25_b3&!Jagged_id25_b4&Ligand_in_id45_b1&Ligand_in_id45_b2&!Ligand_in_id45_b3&Jagged_id87_b1&Jagged_id87_b2 | Jagged_id25_b1&Jagged_id25_b2&Jagged_id25_b3&!Jagged_id25_b4&Ligand_in_id45_b1&Ligand_in_id45_b2&Ligand_in_id45_b3&!Ligand_in_id45_b4&Jagged_id87_b1&Jagged_id87_b2 | Jagged_id25_b1&Jagged_id25_b2&Jagged_id25_b3&!Jagged_id25_b4&Ligand_in_id45_b1&Ligand_in_id45_b2&Ligand_in_id45_b3&Ligand_in_id45_b4 | Jagged_id25_b1&Jagged_id25_b2&Jagged_id25_b3&Jagged_id25_b4&Ligand_in_id45_b1&Ligand_in_id45_b2&!Ligand_in_id45_b3&Jagged_id87_b1 | Jagged_id25_b1&Jagged_id25_b2&Jagged_id25_b3&Jagged_id25_b4&Ligand_in_id45_b1&Ligand_in_id45_b2&Ligand_in_id45_b3&!Ligand_in_id45_b4&Jagged_id87_b1 | Jagged_id25_b1&Jagged_id25_b2&Jagged_id25_b3&Jagged_id25_b4&Ligand_in_id45_b1&Ligand_in_id45_b2&Ligand_in_id45_b3&Ligand_in_id45_b4
 Ligand_in_id45_b4, Jagged_id25_b1&Jagged_id25_b2&Jagged_id25_b3&!Jagged_id25_b4&Ligand_in_id45_b1&Ligand_in_id45_b2&Ligand_in_id45_b3&Jagged_id87_b1&Jagged_id87_b2&Jagged_id87_b3&Jagged_id87_b4 | Jagged_id25_b1&Jagged_id25_b2&Jagged_id25_b3&Jagged_id25_b4&Ligand_in_id45_b1&Ligand_in_id45_b2&Ligand_in_id45_b3&Jagged_id87_b1&Jagged_id87_b2&Jagged_id87_b3
-Ligand_in_id74_b1, 1
+Ligand_in_id74_b1, true
 Ligand_in_id74_b2, !Jagged_id11_b1&Ligand_in_id74_b1&Ligand_in_id74_b2&Ligand_in_id74_b3 | Jagged_id11_b1&Ligand_in_id74_b1
 Ligand_in_id74_b3, !Jagged_id11_b1&Ligand_in_id74_b1&Ligand_in_id74_b2&Ligand_in_id74_b3&Ligand_in_id74_b4 | Jagged_id11_b1&!Jagged_id11_b2&Ligand_in_id74_b1&Ligand_in_id74_b2&Ligand_in_id74_b3&Ligand_in_id74_b4 | Jagged_id11_b1&Jagged_id11_b2&!Jagged_id11_b3&Ligand_in_id74_b1&Ligand_in_id74_b2&Ligand_in_id74_b3&Ligand_in_id74_b4 | Jagged_id11_b1&Jagged_id11_b2&Jagged_id11_b3&Ligand_in_id74_b1&Ligand_in_id74_b2
-Ligand_in_id74_b4, 0
-Ligand_in_id76_b1, 1
+Ligand_in_id74_b4, false
+Ligand_in_id76_b1, true
 Ligand_in_id76_b2, !Jagged_id39_b1&Ligand_in_id76_b1&Ligand_in_id76_b2&Ligand_in_id76_b3 | Jagged_id39_b1&Ligand_in_id76_b1
 Ligand_in_id76_b3, !Jagged_id39_b1&Ligand_in_id76_b1&Ligand_in_id76_b2&Ligand_in_id76_b3&Ligand_in_id76_b4 | Jagged_id39_b1&!Jagged_id39_b2&Ligand_in_id76_b1&Ligand_in_id76_b2&Ligand_in_id76_b3&Ligand_in_id76_b4 | Jagged_id39_b1&Jagged_id39_b2&!Jagged_id39_b3&Ligand_in_id76_b1&Ligand_in_id76_b2&Ligand_in_id76_b3&Ligand_in_id76_b4 | Jagged_id39_b1&Jagged_id39_b2&Jagged_id39_b3&Ligand_in_id76_b1&Ligand_in_id76_b2
-Ligand_in_id76_b4, 0
+Ligand_in_id76_b4, false
 Notch_IC_id18_b1,  !Notch_IC_id18_b1&Notch_id26_b1&Ligand_in_id44_b1 | Notch_IC_id18_b1&!Notch_IC_id18_b2&Notch_id26_b1&Ligand_in_id44_b1 | Notch_IC_id18_b1&Notch_IC_id18_b2
 Notch_IC_id18_b2,  Notch_IC_id18_b1&!Notch_IC_id18_b2&Notch_id26_b1&Notch_id26_b2&Ligand_in_id44_b1&Ligand_in_id44_b2 | Notch_IC_id18_b1&Notch_IC_id18_b2&!Notch_IC_id18_b3&Notch_id26_b1&Notch_id26_b2&Ligand_in_id44_b1&Ligand_in_id44_b2 | Notch_IC_id18_b1&Notch_IC_id18_b2&Notch_IC_id18_b3
 Notch_IC_id18_b3,  Notch_IC_id18_b1&Notch_IC_id18_b2&!Notch_IC_id18_b3&Notch_id26_b1&Notch_id26_b2&Notch_id26_b3&Ligand_in_id44_b1&Ligand_in_id44_b2&Ligand_in_id44_b3 | Notch_IC_id18_b1&Notch_IC_id18_b2&Notch_IC_id18_b3&!Notch_IC_id18_b4&Notch_id26_b1&Notch_id26_b2&Notch_id26_b3&Ligand_in_id44_b1&Ligand_in_id44_b2&Ligand_in_id44_b3 | Notch_IC_id18_b1&Notch_IC_id18_b2&Notch_IC_id18_b3&Notch_IC_id18_b4
@@ -271,7 +271,7 @@ Wnt_ext_id72_b1,   !Frizzled_id24_b1&!Wnt_ext_id72_b1&Frizzled_id86_b1 | !Frizzl
 Wnt_ext_id72_b2,   !Frizzled_id24_b1&Wnt_ext_id72_b1&!Wnt_ext_id72_b2&Frizzled_id86_b1&Frizzled_id86_b2&Frizzled_id86_b3 | !Frizzled_id24_b1&Wnt_ext_id72_b1&Wnt_ext_id72_b2&!Wnt_ext_id72_b3&Frizzled_id86_b1&Frizzled_id86_b2&Frizzled_id86_b3 | !Frizzled_id24_b1&Wnt_ext_id72_b1&Wnt_ext_id72_b2&Wnt_ext_id72_b3 | Frizzled_id24_b1&!Frizzled_id24_b2&Wnt_ext_id72_b1&!Wnt_ext_id72_b2&Frizzled_id86_b1&Frizzled_id86_b2 | Frizzled_id24_b1&!Frizzled_id24_b2&Wnt_ext_id72_b1&Wnt_ext_id72_b2&!Wnt_ext_id72_b3&Frizzled_id86_b1&Frizzled_id86_b2 | Frizzled_id24_b1&!Frizzled_id24_b2&Wnt_ext_id72_b1&Wnt_ext_id72_b2&Wnt_ext_id72_b3 | Frizzled_id24_b1&Frizzled_id24_b2&!Frizzled_id24_b3&Wnt_ext_id72_b1&!Wnt_ext_id72_b2&Frizzled_id86_b1 | Frizzled_id24_b1&Frizzled_id24_b2&!Frizzled_id24_b3&Wnt_ext_id72_b1&Wnt_ext_id72_b2&!Wnt_ext_id72_b3&Frizzled_id86_b1 | Frizzled_id24_b1&Frizzled_id24_b2&!Frizzled_id24_b3&Wnt_ext_id72_b1&Wnt_ext_id72_b2&Wnt_ext_id72_b3 | Frizzled_id24_b1&Frizzled_id24_b2&Frizzled_id24_b3&Wnt_ext_id72_b1
 Wnt_ext_id72_b3,   !Frizzled_id24_b1&Wnt_ext_id72_b1&Wnt_ext_id72_b2&Wnt_ext_id72_b3&Wnt_ext_id72_b4 | Frizzled_id24_b1&!Frizzled_id24_b2&Wnt_ext_id72_b1&Wnt_ext_id72_b2&!Wnt_ext_id72_b3&Frizzled_id86_b1&Frizzled_id86_b2&Frizzled_id86_b3&Frizzled_id86_b4 | Frizzled_id24_b1&!Frizzled_id24_b2&Wnt_ext_id72_b1&Wnt_ext_id72_b2&Wnt_ext_id72_b3&!Wnt_ext_id72_b4&Frizzled_id86_b1&Frizzled_id86_b2&Frizzled_id86_b3&Frizzled_id86_b4 | Frizzled_id24_b1&!Frizzled_id24_b2&Wnt_ext_id72_b1&Wnt_ext_id72_b2&Wnt_ext_id72_b3&Wnt_ext_id72_b4 | Frizzled_id24_b1&Frizzled_id24_b2&!Frizzled_id24_b3&Wnt_ext_id72_b1&Wnt_ext_id72_b2&!Wnt_ext_id72_b3&Frizzled_id86_b1&Frizzled_id86_b2&Frizzled_id86_b3 | Frizzled_id24_b1&Frizzled_id24_b2&!Frizzled_id24_b3&Wnt_ext_id72_b1&Wnt_ext_id72_b2&Wnt_ext_id72_b3&!Wnt_ext_id72_b4&Frizzled_id86_b1&Frizzled_id86_b2&Frizzled_id86_b3 | Frizzled_id24_b1&Frizzled_id24_b2&!Frizzled_id24_b3&Wnt_ext_id72_b1&Wnt_ext_id72_b2&Wnt_ext_id72_b3&Wnt_ext_id72_b4 | Frizzled_id24_b1&Frizzled_id24_b2&Frizzled_id24_b3&!Frizzled_id24_b4&Wnt_ext_id72_b1&Wnt_ext_id72_b2&!Wnt_ext_id72_b3&Frizzled_id86_b1&Frizzled_id86_b2 | Frizzled_id24_b1&Frizzled_id24_b2&Frizzled_id24_b3&!Frizzled_id24_b4&Wnt_ext_id72_b1&Wnt_ext_id72_b2&Wnt_ext_id72_b3&!Wnt_ext_id72_b4&Frizzled_id86_b1&Frizzled_id86_b2 | Frizzled_id24_b1&Frizzled_id24_b2&Frizzled_id24_b3&!Frizzled_id24_b4&Wnt_ext_id72_b1&Wnt_ext_id72_b2&Wnt_ext_id72_b3&Wnt_ext_id72_b4 | Frizzled_id24_b1&Frizzled_id24_b2&Frizzled_id24_b3&Frizzled_id24_b4&Wnt_ext_id72_b1&Wnt_ext_id72_b2&!Wnt_ext_id72_b3&Frizzled_id86_b1 | Frizzled_id24_b1&Frizzled_id24_b2&Frizzled_id24_b3&Frizzled_id24_b4&Wnt_ext_id72_b1&Wnt_ext_id72_b2&Wnt_ext_id72_b3&!Wnt_ext_id72_b4&Frizzled_id86_b1 | Frizzled_id24_b1&Frizzled_id24_b2&Frizzled_id24_b3&Frizzled_id24_b4&Wnt_ext_id72_b1&Wnt_ext_id72_b2&Wnt_ext_id72_b3&Wnt_ext_id72_b4
 Wnt_ext_id72_b4,   Frizzled_id24_b1&Frizzled_id24_b2&Frizzled_id24_b3&!Frizzled_id24_b4&Wnt_ext_id72_b1&Wnt_ext_id72_b2&Wnt_ext_id72_b3&Frizzled_id86_b1&Frizzled_id86_b2&Frizzled_id86_b3&Frizzled_id86_b4 | Frizzled_id24_b1&Frizzled_id24_b2&Frizzled_id24_b3&Frizzled_id24_b4&Wnt_ext_id72_b1&Wnt_ext_id72_b2&Wnt_ext_id72_b3&Frizzled_id86_b1&Frizzled_id86_b2&Frizzled_id86_b3
-Wnt_ext_id73_b1,   1
+Wnt_ext_id73_b1,   true
 Wnt_ext_id73_b2,   Wnt_ext_id73_b1
 Wnt_ext_id73_b3,   !Frizzled_id10_b1&Wnt_ext_id73_b1&Wnt_ext_id73_b2&Wnt_ext_id73_b3&Wnt_ext_id73_b4 | Frizzled_id10_b1&Wnt_ext_id73_b1&Wnt_ext_id73_b2
 Wnt_ext_id73_b4,   Frizzled_id10_b1&Frizzled_id10_b2&Frizzled_id10_b3&Wnt_ext_id73_b1&Wnt_ext_id73_b2&Wnt_ext_id73_b3
@@ -282,23 +282,23 @@ Wnt_ext_id75_b4,   Frizzled_id37_b1&Frizzled_id37_b2&Frizzled_id37_b3&Frizzled_i
 Wnt_id20_b1,       Wnt_id20_b1&Wnt_id20_b2
 Wnt_id20_b2,       Wnt_id20_b1&Wnt_id20_b2&Wnt_id20_b3
 Wnt_id20_b3,       Wnt_id20_b1&Wnt_id20_b2&Wnt_id20_b3&Wnt_id20_b4
-Wnt_id20_b4,       0
+Wnt_id20_b4,       false
 Wnt_id33_b1,       Wnt_id33_b1&Wnt_id33_b2
 Wnt_id33_b2,       Wnt_id33_b1&Wnt_id33_b2&Wnt_id33_b3
 Wnt_id33_b3,       Wnt_id33_b1&Wnt_id33_b2&Wnt_id33_b3&Wnt_id33_b4
-Wnt_id33_b4,       0
+Wnt_id33_b4,       false
 Wnt_id7_b1,        Wnt_id7_b1&Wnt_id7_b2
 Wnt_id7_b2,        Wnt_id7_b1&Wnt_id7_b2&Wnt_id7_b3
 Wnt_id7_b3,        Wnt_id7_b1&Wnt_id7_b2&Wnt_id7_b3&Wnt_id7_b4
-Wnt_id7_b4,        0
+Wnt_id7_b4,        false
 Wnt_id83_b1,       Wnt_id83_b1&Wnt_id83_b2
 Wnt_id83_b2,       Wnt_id83_b1&Wnt_id83_b2&Wnt_id83_b3
 Wnt_id83_b3,       Wnt_id83_b1&Wnt_id83_b2&Wnt_id83_b3&Wnt_id83_b4
-Wnt_id83_b4,       0
+Wnt_id83_b4,       false
 Wnt_id96_b1,       Wnt_id96_b1&Wnt_id96_b2
 Wnt_id96_b2,       Wnt_id96_b1&Wnt_id96_b2&Wnt_id96_b3
 Wnt_id96_b3,       Wnt_id96_b1&Wnt_id96_b2&Wnt_id96_b3&Wnt_id96_b4
-Wnt_id96_b4,       0
+Wnt_id96_b4,       false
 bCATexp_id23_b1,   bCATexp_id23_b1
 bCATexp_id23_b2,   bCATexp_id23_b1&bCATexp_id23_b2
 bCATexp_id23_b3,   bCATexp_id23_b1&bCATexp_id23_b2&bCATexp_id23_b3

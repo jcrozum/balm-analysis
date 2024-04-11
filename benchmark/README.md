@@ -7,12 +7,6 @@ You can then use `run_bench.py` to execute such benchmark script for all network
 This will collect the full output of each script, as well as create an agggregate result table.
 Each row of such table contains the network name, runtime of the whole script, and its output.
 
-## Install `nfvsmotifs`
-
-The benchmark scripts assume `nfvsmotifs` is installed as a package. 
-To do this, go to the repository root and run `pip install .` 
-(this step reqires at least `pip` version `23`).
-
 ## Example
 
 For example, to test how long it takes to generate the succession diagram for minimal trap spaces,

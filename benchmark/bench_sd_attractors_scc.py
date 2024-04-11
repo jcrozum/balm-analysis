@@ -1,28 +1,26 @@
-import sys
-sys.path.append(".")
-
 from biodivine_aeon import BooleanNetwork
-from nfvsmotifs.SuccessionDiagram import SuccessionDiagram
-from nfvsmotifs._sd_algorithms.expand_source_SCCs import expand_source_SCCs
+from balm import SuccessionDiagram
 import sys
-import nfvsmotifs
+import os
+import pickle
+import balm.succession_diagram
 
 # Print progress and succession diagram size.
-nfvsmotifs.SuccessionDiagram.DEBUG = True
+balm.succession_diagram.DEBUG = True
 
 NODE_LIMIT = 1_000_000
 DEPTH_LIMIT = 10_000
 
-# This is unfortunately necessary for PyEDA Boolean expression parser (for now).
-sys.setrecursionlimit(150000)
-
 bn = BooleanNetwork.from_file(sys.argv[1])
-bn = bn.infer_regulatory_graph()
+bn = bn.infer_valid_graph()
 
-# Compute the succession diagram.
-sd = SuccessionDiagram(bn)
-fully_expanded = expand_source_SCCs(sd)
-assert fully_expanded
+# Load the precomputed succession diagram. If the file does not
+# exist, this will fail, which is fine.
+with open(f"{sys.argv[1]}.sd.scc.pickle", "rb") as handle:
+    sd = pickle.load(handle)
+
+print(f"Succession diagram size:", len(sd))
+print(f"Minimal traps:", len(sd.minimal_trap_spaces()))
 
 attractor_count = 0
 motif_avoidant_count = 0
@@ -34,4 +32,6 @@ for node in sd.node_ids():
         motif_avoidant_count += len(attr)
 
 print("nodes, attractors, motif-avoidant")
-print(f"{len(sd)}, {attractor_count}, {motif_avoidant_count}")
+print(
+    f"{len(sd)}, {len(sd.minimal_trap_spaces())}, {attractor_count}, {motif_avoidant_count}"
+)

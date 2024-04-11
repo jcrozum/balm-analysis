@@ -15,11 +15,11 @@ bn = bn.infer_valid_graph()
 
 # Compute the succession diagram.
 sd = SuccessionDiagram(bn)
-fully_expanded = sd.expand_minimal_spaces(size_limit=NODE_LIMIT)
+fully_expanded = sd.expand_attractor_seeds(size_limit=NODE_LIMIT)
 assert fully_expanded
 
 #sd.reclaim_node_data()
-with open(f"{sys.argv[1]}.sd.min.pickle", "wb") as handle:
+with open(f"{sys.argv[1]}.sd.attr.pickle", "wb") as handle:
     pickle.dump(sd, handle)
 
 print(f"Succession diagram size:", len(sd))

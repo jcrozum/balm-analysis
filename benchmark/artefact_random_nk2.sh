@@ -23,12 +23,12 @@ if [[ $(ls _run_*) ]]; then
     exit 2
 fi
 
-if git diff-index --quiet HEAD --; then
-    echo "No uncommitted changes. Installing biobalm..."
-else
-    echo "There are uncommitted changes. Please commit or stash them."
-    exit 2
-fi
+# if git diff-index --quiet HEAD --; then
+#     echo "No uncommitted changes. Installing biobalm..."
+# else
+#     echo "There are uncommitted changes. Please commit or stash them."
+#     exit 2
+# fi
 
 rm -rf ./venv
 python3 -m venv ./venv
@@ -43,7 +43,7 @@ if [[ -z "${MEMORY_LIMIT}" ]]; then
   #echo "Please set env. variable MEMORY_LIMIT appropriate for your system (number, in kB)."
   #exit 1
   echo "Memory limit not set. Defaulting to 32GB."
-  MEMORY_LIMIT = 33554432
+  MEMORY_LIMIT=33554432
 fi
 
 ulimit -v $MEMORY_LIMIT
@@ -54,8 +54,10 @@ git rev-parse HEAD > _run_git_rev.txt
 hostname > _run_hostname.txt
 ./venv/bin/pip list > _run_pip_list.txt
 
-MODEL_DIR = ../models/random_nk2
-TIMEOUT = 1h
+MODEL_DIR=../models/random_nk2
+TIMEOUT=1h
+
+set -x
 
 # Benchmark minimal expansion (this ignores motif-avoidant attractors).
 ./venv/bin/python3 run_bench.py $TIMEOUT $MODEL_DIR bench_sd_expand_min.py

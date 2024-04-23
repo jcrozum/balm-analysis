@@ -1,12 +1,8 @@
 from biodivine_aeon import BooleanNetwork
-from balm import SuccessionDiagram
+from biobalm import SuccessionDiagram
 import sys
 import os
 import pickle
-import balm.succession_diagram
-
-# Print progress and succession diagram size.
-balm.succession_diagram.DEBUG = True
 
 NODE_LIMIT = 1_000_000
 DEPTH_LIMIT = 10_000
@@ -31,7 +27,7 @@ for node in sd.node_ids():
     if not sd.node_is_minimal(node):
         motif_avoidant_count += len(attr)
 
-print("nodes, attractors, motif-avoidant")
+print("nodes, minimal-traps, attractors, motif-avoidant")
 print(
     f"{len(sd)}, {len(sd.minimal_trap_spaces())}, {attractor_count}, {motif_avoidant_count}"
 )

@@ -34,7 +34,7 @@ rm -rf ./venv
 python3 -m venv ./venv
 
 # Install biobalm and dependencies.
-./venv/bin/pip install biobalm==0.2.0
+./venv/bin/pip install biodivine_aeon==1.0.0a6
 
 
 # Apply memory limit.
@@ -60,19 +60,6 @@ TIMEOUT=1h
 set -x
 
 # Benchmark minimal expansion (this ignores motif-avoidant attractors).
-./venv/bin/python3 run_bench.py $TIMEOUT $MODEL_DIR bench_sd_expand_min.py
-./venv/bin/python3 run_bench.py $TIMEOUT $MODEL_DIR bench_sd_attractors_min.py
+./venv/bin/python3 run_bench.py $TIMEOUT $MODEL_DIR bench_aeon_attractors.py
 
-# Benchmark "basic" unconstrained BFS expansion and enumeration.
-./venv/bin/python3 run_bench.py $TIMEOUT $MODEL_DIR bench_sd_expand_bfs.py
-./venv/bin/python3 run_bench.py $TIMEOUT $MODEL_DIR bench_sd_attractors_full.py
-
-# Benchmark improved "SCC-reduced" attractor expansion and enumeration.
-./venv/bin/python3 run_bench.py $TIMEOUT $MODEL_DIR bench_sd_expand_scc.py
-./venv/bin/python3 run_bench.py $TIMEOUT $MODEL_DIR bench_sd_attractors_scc.py
-
-# Benchmark basic attractor guided expansion and enumeration
-./venv/bin/python3 run_bench.py $TIMEOUT $MODEL_DIR bench_sd_expand_attr.py
-./venv/bin/python3 run_bench.py $TIMEOUT $MODEL_DIR bench_sd_attractors_attr.py
-
-zip -r perf_random_nk3_`hostname`.zip _run_*
+zip -r perf_aeon_random_nk3_`hostname`.zip _run_*

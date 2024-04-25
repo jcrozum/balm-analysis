@@ -14,7 +14,7 @@ config = SuccessionDiagram.default_config()
 config["debug"] = True
 
 # Compute the succession diagram.
-sd = SuccessionDiagram(bn)
+sd = SuccessionDiagram(bn, config)
 fully_expanded = sd.expand_scc(find_motif_avoidant_attractors=True)
 assert fully_expanded
 

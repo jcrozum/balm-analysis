@@ -58,18 +58,19 @@ if __name__ == "__main__":
 		return benchmark.endswith(".aeon") or benchmark.endswith(".bnet") or benchmark.endswith(".sbml")
 
 	# Create output directory
-	OUT_DIR = BENCH_DIR.replace("/", "_") + "_" + os.path.basename(SCRIPT)
+	BENCH_DIR_NORM = BENCH_DIR.replace("/", "_").replace(".", "")
+	OUT_DIR = BENCH_DIR_NORM + "_" + os.path.basename(SCRIPT)
 	if PARALLEL > 0:
 		OUT_DIR = OUT_DIR + "_parallel"
 	OUT_DIR = "_run_" + OUT_DIR + "_" + str(int(time.time()))
 	os.mkdir(OUT_DIR)
 
 	# Create output stats file
-	TIMES = open(OUT_DIR + "/" + BENCH_DIR.replace("/", "_") + "_" + os.path.basename(SCRIPT) + "_times.csv", "w")
+	TIMES = open(OUT_DIR + "/" + BENCH_DIR_NORM + "_" + os.path.basename(SCRIPT) + "_times.csv", "w")
 	TIMES.write("Benchmark, Time[s]\n")
 
 	# Create an aggregated stats file
-	AGGREGATION = open(OUT_DIR + "/" + BENCH_DIR.replace("/", "_") + "_" + os.path.basename(SCRIPT) + "_aggregated.csv", "w")
+	AGGREGATION = open(OUT_DIR + "/" + BENCH_DIR_NORM + "_" + os.path.basename(SCRIPT) + "_aggregated.csv", "w")
 	AGGREGATION.write("Time[s], No. Completed\n")
 
 	# Here, save all runtimes.

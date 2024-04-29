@@ -29,4 +29,4 @@ for a in attr:
     attr_states = attr_states.union(a)
 
 print("attractors, attractor-states")
-print(f"{len(attr)},{attr_states.cardinality()}")
+print(f"{len(attr)}, {attr_states.cardinality()}")

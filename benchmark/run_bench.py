@@ -5,6 +5,11 @@ import time
 from multiprocessing import Process
 from shlex import quote
 
+# Use this to configure which output line should be printed. 
+# Currently, you need to change this manually. Default is -1
+# (last line).
+RESULT_LINE = -2
+
 # Spawn a new process external process.
 def SPAWN(command):
 	print("Spawn:", command)
@@ -80,7 +85,8 @@ if __name__ == "__main__":
 	BENCHMARKS = sorted(BENCHMARKS)
 
 	if SCRIPT.endswith(".py"):
-		SCRIPT = "python3 " + SCRIPT
+		# Use the current python interpreter path to preserve virtual environments.
+		SCRIPT = f"{sys.executable} {SCRIPT}"
 
 	# Handle data from a finished process. In particular,
 	# update AGGREGATION_LIST and TIMES file.
@@ -93,7 +99,11 @@ if __name__ == "__main__":
 			# Time stats are three lines from the end.
 			if len(lines) >= 4:
 				time_line = lines[-3]
-				result_line = lines[-4]
+				result_line_index = -3 + RESULT_LINE
+				if len(lines) <= -result_line_index:
+					# If the output is too short, default to the last line.
+					result_line_index = -4
+				result_line = lines[result_line_index]
 				if RE_TIME.match(time_line) and is_success:
 					# Success, we found time!
 					time = str(RE_TIME.match(time_line).group(1))

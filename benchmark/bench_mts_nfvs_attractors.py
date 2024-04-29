@@ -13,11 +13,13 @@ ba.LOG_LEVEL = ba.LOG_ESSENTIAL
 bn = ba.BooleanNetwork.from_file(sys.argv[1])
 bn = bn.infer_valid_graph()
 
-print(f"Loaded network: {bn}")
+#print(f"Loaded network: {bn}")
 
 bn = bn.inline_constants(infer_constants=True, repair_graph=True)
-
-print(f"Simplified network: {bn}")
+if bn.variable_count() == 0:
+    print("Network solved through constant propagation.")
+    sys.exit(0)
+#print(f"Simplified network: {bn}")
 
 # Fix header and output network.
 Path("./mtsNFVS/python/networks/test.bnet").write_text(bn.to_bnet().replace("targets,", "targets, "))

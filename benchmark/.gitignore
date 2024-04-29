@@ -2,3 +2,7 @@
 _run_*
 
 perf_*.zip
+
+mtsNFVS/python/networks
+mtsNFVS/python/predata
+mtsNFVS/python/results

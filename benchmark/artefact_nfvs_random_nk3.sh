@@ -35,6 +35,7 @@ python3 -m venv ./venv
 
 # Install dependencies. mtsNFVS is already in the repo.
 ./venv/bin/pip install biodivine_aeon==1.0.0a6
+./venv/bin/pip install networkx pyeda
 
 
 # Apply memory limit.

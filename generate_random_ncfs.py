@@ -2,15 +2,17 @@ import os
 
 from rbn_generators import *
 
-N_NODES_LIST = [10, 20, 40, 80, 160, 320]
+N_NODES_LIST = [10, 20, 40, 80, 160, 320, 640, 1280, 2560]
+
 GRAPHS_PER_SIZE = 100
-POWER = 2.5  # power for the out-degree, diverges at 2.0
-P_NEG = 0.25  # ratio of negative edges
-DIRECTORY = "models/random_ncf2"
+POWER = 2.27  # power for the out-degree, diverges at 2.0
+P_NEG = 0.24  # ratio of negative edges
+SINK = 0.1 # ratio of sink nodes
+DIRECTORY = "models/random_ncf"
 
 for N_NODES in N_NODES_LIST:
     for i in range(GRAPHS_PER_SIZE):
-        G = power_law_graph_generator(N_NODES, POWER, seed=i)
+        G = power_law_graph_generator(N_NODES, POWER, sink=SINK, seed=i)
 
         add_negative_edges(G, P_NEG, seed=i)
 

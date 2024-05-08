@@ -3,7 +3,7 @@ import numpy as np
 import scipy as sp
 
 
-def power_law_graph_generator(n_nodes: int, power: float = 3.0, seed: int = 0):
+def power_law_graph_generator(n_nodes: int, power: float = 3.0, sink: float = 0.0, seed: int = 0):
     """
     Function to generate a random graph with power-law out-degree distribution
     and a Poisson in-degree distribution.
@@ -17,11 +17,19 @@ def power_law_graph_generator(n_nodes: int, power: float = 3.0, seed: int = 0):
         rand = 1 - rng.random()  # (0.0, 1.0]
         k = 0
         val = 0
+
+        if rand < sink:
+            ks.append(k)
+            continue
+        else:
+            rand = 1 - rng.random()  # (0.0, 1.0]
+
         while val < rand:
             k += 1
             val += A / k**power
             # reset and restart if the degree gets bigger than the number of nodes
             # this cuts off the tail of the power law distribution
+            # and effectively renormalizes A for the finite case
             if k > n_nodes:
                 rand = 1 - rng.random()  # (0.0, 1.0]
                 k = 0

@@ -6,3 +6,4 @@ perf_*.zip
 mtsNFVS/python/networks
 mtsNFVS/python/predata
 mtsNFVS/python/results
+mtsNFVS/python/external/pint.sh

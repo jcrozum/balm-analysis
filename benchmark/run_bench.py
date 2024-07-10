@@ -8,7 +8,7 @@ from shlex import quote
 # Use this to configure which output line should be printed. 
 # Currently, you need to change this manually. Default is -1
 # (last line).
-RESULT_LINE = -1
+RESULT_LINE = -1 if 'OUTPUT_LINE' not in os.environ else int(os.environ['OUTPUT_LINE'])
 
 # Spawn a new process external process.
 def SPAWN(command):

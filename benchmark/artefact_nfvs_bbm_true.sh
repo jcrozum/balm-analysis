@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Generate a performance artefact for AEON.py and random-nk3 models.
+# Generate a performance artefact for mts-nfvs and bbm-inputs-true models.
 
 if [[ $(ls _run_*) ]]; then
     echo "There are existing result runs already present. Please remove them first."
@@ -10,9 +10,9 @@ fi
 rm -rf ./venv
 python3 -m venv ./venv
 
-# Install dependencies.
-./venv/bin/pip install biodivine_aeon==1.0.0a8
-
+# Install dependencies. mtsNFVS is already in the repo.
+./venv/bin/pip install biodivine_aeon==1.0.0a6
+./venv/bin/pip install networkx pyeda
 
 # Apply memory limit (only works on linux).
 if [[ -z "${MEMORY_LIMIT}" ]]; then
@@ -28,11 +28,14 @@ git rev-parse HEAD > _run_git_rev.txt
 hostname > _run_hostname.txt
 ./venv/bin/pip list > _run_pip_list.txt
 
-MODEL_DIR=../models/random_nk3
+MODEL_DIR=../models/bbm-bnet-inputs-true
 TIMEOUT=1h
+
+# Number of attractors is not printed on the last line.
+export OUTPUT_LINE=-2
 
 set -x
 
-./venv/bin/python3 run_bench.py $TIMEOUT $MODEL_DIR bench_aeon_attractors.py
+./venv/bin/python3 run_bench.py $TIMEOUT $MODEL_DIR bench_mts_nfvs_attractors.py
 
-zip -r perf_aeon_random_nk3_`hostname`.zip _run_*
+zip -r perf_mts_nfvs_bbm_true_`hostname`.zip _run_*

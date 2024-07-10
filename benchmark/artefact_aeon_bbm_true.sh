@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Generate a performance artefact for AEON.py and random-nk3 models.
+# Generate a performance artefact for AEON.py and bbm-inputs-true models.
 
 if [[ $(ls _run_*) ]]; then
     echo "There are existing result runs already present. Please remove them first."
@@ -28,11 +28,11 @@ git rev-parse HEAD > _run_git_rev.txt
 hostname > _run_hostname.txt
 ./venv/bin/pip list > _run_pip_list.txt
 
-MODEL_DIR=../models/random_nk3
+MODEL_DIR=../models/bbm-bnet-inputs-true
 TIMEOUT=1h
 
 set -x
 
 ./venv/bin/python3 run_bench.py $TIMEOUT $MODEL_DIR bench_aeon_attractors.py
 
-zip -r perf_aeon_random_nk3_`hostname`.zip _run_*
+zip -r perf_aeon_bbm_true_`hostname`.zip _run_*

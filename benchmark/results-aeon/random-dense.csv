@@ -1,16 +1,16 @@
-Benchmark, Time[s], attractors, attractor_states
+Benchmark, Time[s]
 1, FAIL,  > Finished ITGR process. 36 processes remaining.
-10, 2973.05, 7, 25563645345809
-11, 382.55, 1, 8
-12, 407.85, 1, 32
-13, 556.88, 6, 6
-14, 599.20, 1, 279165327982460928
-15, 964.34, 4, 532
+10, 2973.05, attractors, attractor-states
+11, 382.55, attractors, attractor-states
+12, 407.85, attractors, attractor-states
+13, 556.88, attractors, attractor-states
+14, 599.20, attractors, attractor-states
+15, 964.34, attractors, attractor-states
 16, FAIL,  > Finished ITGR process. 68 processes remaining.
-17, 84.73, 1, 1024
+17, 84.73, attractors, attractor-states
 18, 3312.44,  > Finished ITGR process. 99 processes remaining.
-19, 46.99, 2, 1024
-2, 1568.41, 5, 123
+19, 46.99, attractors, attractor-states
+2, 1568.41, attractors, attractor-states
 20, FAIL,  > Finished ITGR process. 62 processes remaining.
 21, FAIL,  >> [BWD process] Reachability progress: 1103890221804796700000000000000000000000000000000000000000000[nodes:107337] candidates (99.73 log-%).
 22, FAIL,  >> [BWD process] Reachability progress: 1355831910320106000000000000000000000000000000000000000000000[nodes:119956] candidates (99.88 log-%).
@@ -43,7 +43,7 @@ Benchmark, Time[s], attractors, attractor_states
 47, FAIL,  >> [BWD process] Reachability progress: 1360750147653134800000000000000000000000000000000000000000000000000000000000000000000000000[nodes:106254] candidates (99.81 log-%).
 48, FAIL,  >> [BWD process] Reachability progress: 1989021265382125600000000000000000000000000000000000000000000000000000000000000000000000000[nodes:104243] candidates (99.99 log-%).
 49, FAIL,  >> [BWD process] Reachability progress: 1399199896377541000000000000000000000000000000000000000000000000000000000000000000000000000[nodes:318399] candidates (99.82 log-%).
-5, 606.02, 1, 16642998272
+5, 606.02, attractors, attractor-states
 50, FAIL,  >> [BWD process] Reachability progress: 1463518195714720200000000000000000000000000000000000000000000000000000000000000000000000000[nodes:111122] candidates (99.84 log-%).
 51, FAIL,  >> [BWD process] Reachability progress: 1430719370740391000000000000000000000000000000000000000000000000000000000000000000000000000[nodes:101672] candidates (99.83 log-%).
 52, FAIL,  >> [BWD process] Reachability progress: 1383470024866972700000000000000000000000000000000000000000000000000000000000000000000000000[nodes:103496] candidates (99.81 log-%).
@@ -54,8 +54,8 @@ Benchmark, Time[s], attractors, attractor_states
 57, FAIL,  >> [BWD process] Reachability progress: 1951549839057283800000000000000000000000000000000000000000000000000000000000000000000000000[nodes:100199] candidates (99.98 log-%).
 58, FAIL,  > Finished ITGR process. 300 processes remaining.
 59, FAIL,  >> [BWD process] Reachability progress: 1398520316648797700000000000000000000000000000000000000000000000000000000000000000000000000[nodes:101882] candidates (99.82 log-%).
-6, 3455.59, 1, 154742504910672534362390528
+6, 3455.59, attractors, attractor-states
 60, FAIL,  >> [BWD process] Reachability progress: 1980238116357031900000000000000000000000000000000000000000000000000000000000000000000000000[nodes:106264] candidates (99.99 log-%).
 7, FAIL,  > Finished ITGR process. 77 processes remaining.
 8, FAIL,  > Finished ITGR process. 79 processes remaining.
-9, 22.03, 3, 24
+9, 22.03, attractors, attractor-states

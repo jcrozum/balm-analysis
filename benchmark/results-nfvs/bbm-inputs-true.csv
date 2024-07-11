@@ -1,0 +1,211 @@
+Benchmark, Time[s]
+001, 0.17, Network solved through constant propagation.
+002, 7.53, Number of attractors: 24
+003, 0.01, Network solved through constant propagation.
+004, fail
+005, 0.41, Number of attractors: 1
+006, 0.02, Network solved through constant propagation.
+007, 0.30, Number of attractors: 2
+008, 0.32, Number of attractors: 3
+009, 0.02, Network solved through constant propagation.
+010, 0.02, Network solved through constant propagation.
+011, 0.32, Number of attractors: 2
+012, 0.36, Number of attractors: 1
+013, 0.02, Network solved through constant propagation.
+014, 0.43, Number of attractors: 2
+015, 0.31, Number of attractors: 1
+016, 0.04, Network solved through constant propagation.
+017, 0.30, Number of attractors: 3
+018, 0.35, Number of attractors: 1
+019, 0.03, Network solved through constant propagation.
+020, 0.34, Number of attractors: 2
+021, 0.02, Network solved through constant propagation.
+022, 0.02, Network solved through constant propagation.
+023, 0.32, Number of attractors: 1
+024, 0.33, Number of attractors: 1
+025, 0.44, Number of attractors: 2
+026, 0.34, Number of attractors: 1
+027, 0.02, Network solved through constant propagation.
+028, 0.01, Network solved through constant propagation.
+029, 0.01, Network solved through constant propagation.
+030, 0.01, Network solved through constant propagation.
+031, 0.31, Number of attractors: 1
+032, 0.35, Number of attractors: 1
+033, 0.31, Number of attractors: 36
+034, 0.34, Number of attractors: 180
+035, 0.29, Number of attractors: 3
+036, 0.29, Number of attractors: 8
+037, 0.29, Number of attractors: 27
+038, 0.31, Number of attractors: 22
+039, 0.35, Number of attractors: 2
+040, 0.30, Number of attractors: 2
+041, 0.04, Network solved through constant propagation.
+042, 0.02, Network solved through constant propagation.
+043, 0.45, Number of attractors: 3
+044, 0.34, Number of attractors: 2
+045, 0.02, Network solved through constant propagation.
+046, 0.49, Number of attractors: 17
+047, 0.02, Network solved through constant propagation.
+048, 0.02, Network solved through constant propagation.
+049, 0.31, Number of attractors: 1
+050, 0.37, Number of attractors: 6
+051, 0.53, Number of attractors: 5
+052, 0.30, Number of attractors: 2
+053, 0.02, Network solved through constant propagation.
+054, 0.02, Network solved through constant propagation.
+055, 0.37, Number of attractors: 3
+056, 0.36, Number of attractors: 1
+057, 0.35, Number of attractors: 1
+058, 0.37, Number of attractors: 1
+059, 0.02, Network solved through constant propagation.
+060, 0.32, Number of attractors: 2
+061, 0.33, Number of attractors: 1
+062, 0.02, Network solved through constant propagation.
+063, 0.01, Network solved through constant propagation.
+064, 0.30, Number of attractors: 2
+065, 0.47, Number of attractors: 3
+066, 0.30, Number of attractors: 2
+067, 0.02, Network solved through constant propagation.
+068, 0.32, Number of attractors: 2
+069, 0.35, Number of attractors: 1
+070, 0.02, Network solved through constant propagation.
+071, 0.02, Network solved through constant propagation.
+072, 0.30, Number of attractors: 2
+073, 0.44, Number of attractors: 4
+074, 0.31, Number of attractors: 3
+075, 2.76, Number of attractors: 1
+076, 0.02, Network solved through constant propagation.
+077, 0.34, Number of attractors: 1
+078, 0.42, Number of attractors: 1
+079, 2.71,   File "<string>", line 1, in <lambda>
+080, 0.04, Network solved through constant propagation.
+081, 0.02, Network solved through constant propagation.
+082, 0.05, Network solved through constant propagation.
+083, 1.05, Number of attractors: 1
+084, 0.35, Number of attractors: 1
+085, 0.02, Network solved through constant propagation.
+086, 0.39, Number of attractors: 3
+087, 0.04, Network solved through constant propagation.
+088, 0.29, Number of attractors: 3
+089, 0.02, Network solved through constant propagation.
+090, 0.02, Network solved through constant propagation.
+091, 0.02, Network solved through constant propagation.
+092, 0.02, Network solved through constant propagation.
+093, 0.03, Network solved through constant propagation.
+094, 0.02, Network solved through constant propagation.
+095, 0.30, Number of attractors: 1
+096, 0.02, Network solved through constant propagation.
+097, 0.01, Network solved through constant propagation.
+098, 0.02, Network solved through constant propagation.
+099, 0.32, Number of attractors: 3
+100, 0.01, Network solved through constant propagation.
+101, 0.35, Number of attractors: 1
+102, 0.30, Number of attractors: 1
+103, 0.34, Number of attractors: 2
+104, 0.32, Number of attractors: 1
+105, 0.38, Number of attractors: 1
+106, 0.36, Number of attractors: 1
+107, 0.44, Number of attractors: 3
+108, 0.36, Number of attractors: 2
+109, 0.29, Number of attractors: 1
+110, 0.31, Number of attractors: 2
+111, 0.02, Network solved through constant propagation.
+112, 0.31, Number of attractors: 2
+113, 0.46, Number of attractors: 120
+114, 0.38, Number of attractors: 40
+115, 0.02, Network solved through constant propagation.
+116, 0.33, Number of attractors: 6
+117, 0.29, Number of attractors: 2
+118, 0.31, Number of attractors: 2
+119, 0.01, Network solved through constant propagation.
+120, 0.34, Number of attractors: 2
+121, 0.32, Number of attractors: 10
+123, 0.32, Number of attractors: 8
+124, 0.37, Number of attractors: 2
+125, 0.30, Number of attractors: 2
+126, 0.29, Number of attractors: 24
+127, 0.02, Network solved through constant propagation.
+128, 0.30, Number of attractors: 2
+129, 0.02, Network solved through constant propagation.
+130, 0.03, Network solved through constant propagation.
+131, 0.01, Network solved through constant propagation.
+132, 1.09, Number of attractors: 2
+133, 0.28, Number of attractors: 4
+134, 0.02, Network solved through constant propagation.
+135, 0.29, Number of attractors: 1
+136, 0.30, Number of attractors: 1
+137, 0.02, Network solved through constant propagation.
+138, 0.02, Network solved through constant propagation.
+139, 0.29, Number of attractors: 2
+140, 0.30, Number of attractors: 4
+141, 0.02, Network solved through constant propagation.
+142, 0.31, Number of attractors: 6
+143, 0.38, Number of attractors: 216
+145, 0.46, Number of attractors: 1
+146, 2.01,   File "<string>", line 1, in <lambda>
+147, 0.31, Number of attractors: 1
+148, 0.65, Number of attractors: 1
+149, 0.02, Network solved through constant propagation.
+150, 0.35, Number of attractors: 5
+151, 6.98, Number of attractors: 2
+152, 0.91, Number of attractors: 2
+153, 0.31, Number of attractors: 1
+154, 0.29, Number of attractors: 2
+155, 0.31, Number of attractors: 4
+156, 0.30, Number of attractors: 4
+157, 0.06, Network solved through constant propagation.
+158, 0.31, Number of attractors: 2
+159, 1.39,                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+160, 0.53, Number of attractors: 18
+161, 0.04, Network solved through constant propagation.
+162, 0.29, Number of attractors: 2
+163, 0.30, Number of attractors: 2
+164, 0.30, Number of attractors: 24
+165, 0.29, Number of attractors: 2
+166, 0.02, Network solved through constant propagation.
+167, 0.31, Number of attractors: 4
+168, 0.01, Network solved through constant propagation.
+169, 0.01, Network solved through constant propagation.
+170, 0.01, Network solved through constant propagation.
+171, 0.29, Number of attractors: 2
+172, 0.30, Number of attractors: 4
+173, 0.30, Number of attractors: 2
+174, 0.37, Number of attractors: 13
+175, 0.36, Number of attractors: 15
+176, 0.33, Number of attractors: 1
+177, 0.33, Number of attractors: 2
+178, 0.29, Number of attractors: 2
+179, 0.03, Network solved through constant propagation.
+180, 0.29, Number of attractors: 2
+181, 0.33, Number of attractors: 1
+182, 0.33, Number of attractors: 1
+183, 0.31, Number of attractors: 2
+184, 0.31, Number of attractors: 1
+185, 0.31, Number of attractors: 3
+186, 0.30, Number of attractors: 3
+187, 0.29, Number of attractors: 3
+188, 0.35, Number of attractors: 9
+189, 0.29, Number of attractors: 2
+190, 0.31, Number of attractors: 1
+191, 0.31, Number of attractors: 2
+192, fail
+193, 0.31, Number of attractors: 4
+194, 0.35, Number of attractors: 3
+195, 0.43, Number of attractors: 48
+196, 0.58, Number of attractors: 4
+197, 6.26, Number of attractors: 16
+198, 0.32, Number of attractors: 4
+199, 0.41, Number of attractors: 7
+200, 0.39, Number of attractors: 2
+201, 0.39, Number of attractors: 2
+202, 0.41, Number of attractors: 2
+203, 0.34, Number of attractors: 3
+204, 0.58, Number of attractors: 1
+205, 0.02, Network solved through constant propagation.
+206, 0.29, Number of attractors: 2
+207, 0.35, Number of attractors: 4
+208, 0.31, Number of attractors: 5
+209, 0.93, Number of attractors: 1
+210, 1.90, Number of attractors: 1
+211, 16.61, Number of attractors: 1
+212, 0.30, Number of attractors: 1

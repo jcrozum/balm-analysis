@@ -11,8 +11,7 @@ rm -rf ./venv
 python3 -m venv ./venv
 
 # Install dependencies.
-# ./venv/bin/pip install biobalm==0.2.0
-./venv/bin/pip install ../../biobalm
+./venv/bin/pip install biobalm==0.3.1
 
 # Apply memory limit (only works on linux).
 if [[ -z "${MEMORY_LIMIT}" ]]; then

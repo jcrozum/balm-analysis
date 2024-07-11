@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Generate a performance artefact for AEON.py and random-nk3 models.
+# Generate a performance artefact for biobalm and random-ncf models.
 
 if [[ $(ls _run_*) ]]; then
     echo "There are existing result runs already present. Please remove them first."
@@ -11,8 +11,7 @@ rm -rf ./venv
 python3 -m venv ./venv
 
 # Install dependencies.
-./venv/bin/pip install biodivine_aeon==1.0.0a8
-
+./venv/bin/pip install biobalm==0.3.1
 
 # Apply memory limit (only works on linux).
 if [[ -z "${MEMORY_LIMIT}" ]]; then
@@ -28,11 +27,13 @@ git rev-parse HEAD > _run_git_rev.txt
 hostname > _run_hostname.txt
 ./venv/bin/pip list > _run_pip_list.txt
 
-MODEL_DIR=../models/random_nk3
+MODEL_DIR=../models/random_ncf
 TIMEOUT=1h
 
 set -x
 
-./venv/bin/python3 run_bench.py $TIMEOUT $MODEL_DIR bench_aeon_attractors.py
+./venv/bin/python3 run_bench.py $TIMEOUT $MODEL_DIR bench_balm_block_attractors.py
+./venv/bin/python3 run_bench.py $TIMEOUT $MODEL_DIR bench_balm_full_expand.py
+./venv/bin/python3 run_bench.py $TIMEOUT $MODEL_DIR bench_balm_full_attractors.py
 
-zip -r perf_aeon_random_nk3_`hostname`.zip _run_*
+zip -r perf_balm_random_ncf_`hostname`.zip _run_*

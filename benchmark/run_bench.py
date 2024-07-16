@@ -86,7 +86,9 @@ if __name__ == "__main__":
 
 	if SCRIPT.endswith(".py"):
 		# Use the current python interpreter path to preserve virtual environments.
-		SCRIPT = f"{sys.executable} {SCRIPT}"
+		SCRIPT = f"'{sys.executable}' '{SCRIPT}'"
+	else:
+		SCRIPT = f"'{SCRIPT}'"
 
 	# Handle data from a finished process. In particular,
 	# update AGGREGATION_LIST and TIMES file.
@@ -136,7 +138,7 @@ if __name__ == "__main__":
 				name = os.path.splitext(bench)[0]
 				input_file = BENCH_DIR + "/" + bench
 				output_file = OUT_DIR + "/" + name + "_out.txt"			
-				command = TIMEOUT + " " + CUT_OFF + " time -p " + SCRIPT + " " + input_file + " > " + output_file + " 2>&1"
+				command = TIMEOUT + " " + CUT_OFF + " time -p " + SCRIPT + " '" + input_file + "' > " + output_file + " 2>&1"
 				process = Process(target=SPAWN, args=(command,))
 				process.start()
 				ACTIVE.append((process, name, output_file))			
@@ -164,7 +166,7 @@ if __name__ == "__main__":
 			name = os.path.splitext(bench)[0]
 			input_file = BENCH_DIR + "/" + bench
 			output_file = OUT_DIR + "/" + name + "_out.txt"			
-			command = TIMEOUT + " " + CUT_OFF + " time -p " + SCRIPT + " " + input_file + " > " + output_file + " 2>&1"
+			command = TIMEOUT + " " + CUT_OFF + " time -p " + SCRIPT + " '" + input_file + "' > " + output_file + " 2>&1"
 			process = Process(target=SPAWN, args=(command,))
 			process.start()
 			process.join()

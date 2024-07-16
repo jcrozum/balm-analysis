@@ -77,7 +77,7 @@ Benchmark, Time[s]
 076, 0.02, Network solved through constant propagation.
 077, 0.34, Number of attractors: 1
 078, 0.42, Number of attractors: 1
-079, 2.71,   File "<string>", line 1, in <lambda>
+079, 2.71,   File "<string>"
 080, 0.04, Network solved through constant propagation.
 081, 0.02, Network solved through constant propagation.
 082, 0.05, Network solved through constant propagation.
@@ -142,7 +142,7 @@ Benchmark, Time[s]
 142, 0.31, Number of attractors: 6
 143, 0.38, Number of attractors: 216
 145, 0.46, Number of attractors: 1
-146, 2.01,   File "<string>", line 1, in <lambda>
+146, 2.01,   File "<string>"
 147, 0.31, Number of attractors: 1
 148, 0.65, Number of attractors: 1
 149, 0.02, Network solved through constant propagation.

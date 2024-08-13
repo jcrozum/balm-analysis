@@ -4048,137 +4048,137 @@ Benchmark, Time[s]
 078_1111010001101, 0.72, Number of attractors: 4
 078_1111010011100, 0.73, Number of attractors: 4
 078_1111110011011, 0.62, Number of attractors: 2
-079_0000000100111, 2.92,   File "<string>", line 1, in <lambda>
-079_0000001001000, 2.79,   File "<string>", line 1, in <lambda>
-079_0000001010010, 2.71,   File "<string>", line 1, in <lambda>
-079_0000001010011, 2.57,   File "<string>", line 1, in <lambda>
-079_0000001111001, 2.55,   File "<string>", line 1, in <lambda>
-079_0000010010011, 2.67,   File "<string>", line 1, in <lambda>
-079_0000010100100, 2.63,   File "<string>", line 1, in <lambda>
-079_0000011011001, 2.47,   File "<string>", line 1, in <lambda>
-079_0000011011011, 2.47,   File "<string>", line 1, in <lambda>
-079_0000100010001, 2.81,   File "<string>", line 1, in <lambda>
-079_0000100010100, 2.82,   File "<string>", line 1, in <lambda>
-079_0000101001010, 2.65,   File "<string>", line 1, in <lambda>
-079_0000101010110, 2.51,   File "<string>", line 1, in <lambda>
-079_0000101100110, 2.49,   File "<string>", line 1, in <lambda>
-079_0000111011010, 2.47,   File "<string>", line 1, in <lambda>
-079_0000111100101, 2.43,   File "<string>", line 1, in <lambda>
-079_0001001100111, 2.80,   File "<string>", line 1, in <lambda>
-079_0001001111010, 2.91,   File "<string>", line 1, in <lambda>
-079_0001011001111, 2.78,   File "<string>", line 1, in <lambda>
-079_0001101001110, 2.66,   File "<string>", line 1, in <lambda>
-079_0001101011110, 2.92,   File "<string>", line 1, in <lambda>
-079_0001101111101, 2.86,   File "<string>", line 1, in <lambda>
-079_0001110011001, 2.86,   File "<string>", line 1, in <lambda>
-079_0001110111011, 2.76,   File "<string>", line 1, in <lambda>
-079_0001111100001, 2.74,   File "<string>", line 1, in <lambda>
-079_0010000011010, 3.26,   File "<string>", line 1, in <lambda>
-079_0010010011000, 2.71,   File "<string>", line 1, in <lambda>
-079_0010011000001, 2.61,   File "<string>", line 1, in <lambda>
-079_0010011000110, 2.47,   File "<string>", line 1, in <lambda>
-079_0010100000111, 3.01,   File "<string>", line 1, in <lambda>
-079_0010111110100, 2.42,   File "<string>", line 1, in <lambda>
-079_0011000101010, 3.32,   File "<string>", line 1, in <lambda>
-079_0011000110000, 3.27,   File "<string>", line 1, in <lambda>
-079_0011001011111, 2.62,   File "<string>", line 1, in <lambda>
+079_0000000100111, 2.92,   File "<string>" ...  in <lambda>
+079_0000001001000, 2.79,   File "<string>" ...  in <lambda>
+079_0000001010010, 2.71,   File "<string>" ...  in <lambda>
+079_0000001010011, 2.57,   File "<string>" ...  in <lambda>
+079_0000001111001, 2.55,   File "<string>" ...  in <lambda>
+079_0000010010011, 2.67,   File "<string>" ...  in <lambda>
+079_0000010100100, 2.63,   File "<string>" ...  in <lambda>
+079_0000011011001, 2.47,   File "<string>" ...  in <lambda>
+079_0000011011011, 2.47,   File "<string>" ...  in <lambda>
+079_0000100010001, 2.81,   File "<string>" ...  in <lambda>
+079_0000100010100, 2.82,   File "<string>" ...  in <lambda>
+079_0000101001010, 2.65,   File "<string>" ...  in <lambda>
+079_0000101010110, 2.51,   File "<string>" ...  in <lambda>
+079_0000101100110, 2.49,   File "<string>" ...  in <lambda>
+079_0000111011010, 2.47,   File "<string>" ...  in <lambda>
+079_0000111100101, 2.43,   File "<string>" ...  in <lambda>
+079_0001001100111, 2.80,   File "<string>" ...  in <lambda>
+079_0001001111010, 2.91,   File "<string>" ...  in <lambda>
+079_0001011001111, 2.78,   File "<string>" ...  in <lambda>
+079_0001101001110, 2.66,   File "<string>" ...  in <lambda>
+079_0001101011110, 2.92,   File "<string>" ...  in <lambda>
+079_0001101111101, 2.86,   File "<string>" ...  in <lambda>
+079_0001110011001, 2.86,   File "<string>" ...  in <lambda>
+079_0001110111011, 2.76,   File "<string>" ...  in <lambda>
+079_0001111100001, 2.74,   File "<string>" ...  in <lambda>
+079_0010000011010, 3.26,   File "<string>" ...  in <lambda>
+079_0010010011000, 2.71,   File "<string>" ...  in <lambda>
+079_0010011000001, 2.61,   File "<string>" ...  in <lambda>
+079_0010011000110, 2.47,   File "<string>" ...  in <lambda>
+079_0010100000111, 3.01,   File "<string>" ...  in <lambda>
+079_0010111110100, 2.42,   File "<string>" ...  in <lambda>
+079_0011000101010, 3.32,   File "<string>" ...  in <lambda>
+079_0011000110000, 3.27,   File "<string>" ...  in <lambda>
+079_0011001011111, 2.62,   File "<string>" ...  in <lambda>
 004_1111011111011001101000, fail
-079_0011010101100, 2.64,   File "<string>", line 1, in <lambda>
-079_0011011010011, 2.45,   File "<string>", line 1, in <lambda>
-079_0011011101000, 2.47,   File "<string>", line 1, in <lambda>
-079_0011100001000, 3.05,   File "<string>", line 1, in <lambda>
-079_0011100110100, 3.07,   File "<string>", line 1, in <lambda>
-079_0011101011100, 2.45,   File "<string>", line 1, in <lambda>
-079_0011111110101, 2.29,   File "<string>", line 1, in <lambda>
-079_0100001010110, 2.95,   File "<string>", line 1, in <lambda>
-079_0100010000010, 2.89,   File "<string>", line 1, in <lambda>
-079_0100010101101, 2.91,   File "<string>", line 1, in <lambda>
-079_0100100101001, 3.17,   File "<string>", line 1, in <lambda>
-079_0100101001100, 2.94,   File "<string>", line 1, in <lambda>
-079_0100101111110, 2.82,   File "<string>", line 1, in <lambda>
-079_0100110000101, 2.90,   File "<string>", line 1, in <lambda>
-079_0100110010101, 2.89,   File "<string>", line 1, in <lambda>
-079_0101010010001, 3.50,   File "<string>", line 1, in <lambda>
-079_0101011010011, 3.47,   File "<string>", line 1, in <lambda>
-079_0101100100010, 3.35,   File "<string>", line 1, in <lambda>
-079_0101101111010, 3.48,   File "<string>", line 1, in <lambda>
-079_0101111001110, 3.15,   File "<string>", line 1, in <lambda>
-079_0110000010101, 3.56,   File "<string>", line 1, in <lambda>
-079_0110010100000, 3.21,   File "<string>", line 1, in <lambda>
-079_0110011000100, 2.65,   File "<string>", line 1, in <lambda>
-079_0110011010011, 2.91,   File "<string>", line 1, in <lambda>
-079_0110110101001, 2.93,   File "<string>", line 1, in <lambda>
-079_0111000110111, 3.70,   File "<string>", line 1, in <lambda>
-079_0111001011101, 3.30,   File "<string>", line 1, in <lambda>
-079_0111011000000, 3.22,   File "<string>", line 1, in <lambda>
-079_0111011101100, 3.18,   File "<string>", line 1, in <lambda>
-079_0111111010010, 2.99,   File "<string>", line 1, in <lambda>
-079_0111100111000, 3.61,   File "<string>", line 1, in <lambda>
-079_1000011101101, 2.59,   File "<string>", line 1, in <lambda>
-079_0111111100111, 3.07,   File "<string>", line 1, in <lambda>
-079_0111111101001, 3.11,   File "<string>", line 1, in <lambda>
-079_1000101011100, 2.42,   File "<string>", line 1, in <lambda>
-079_1000111101110, 2.52,   File "<string>", line 1, in <lambda>
-079_1001001111011, 2.70,   File "<string>", line 1, in <lambda>
-079_1001010011101, 2.76,   File "<string>", line 1, in <lambda>
-079_1001010011110, 2.75,   File "<string>", line 1, in <lambda>
-079_1001010110001, 2.77,   File "<string>", line 1, in <lambda>
-079_1001011000111, 2.70,   File "<string>", line 1, in <lambda>
-079_1001011100111, 2.71,   File "<string>", line 1, in <lambda>
-079_1001011110000, 2.70,   File "<string>", line 1, in <lambda>
-079_1001011110010, 2.82,   File "<string>", line 1, in <lambda>
-079_1001100100000, 2.83,   File "<string>", line 1, in <lambda>
-079_1001101011101, 2.78,   File "<string>", line 1, in <lambda>
-079_1001101111110, 2.93,   File "<string>", line 1, in <lambda>
-079_1010010010001, 2.77,   File "<string>", line 1, in <lambda>
-079_1010010011001, 2.64,   File "<string>", line 1, in <lambda>
-079_1010010110001, 2.77,   File "<string>", line 1, in <lambda>
-079_1010011111001, 2.54,   File "<string>", line 1, in <lambda>
-079_1010101000011, 2.62,   File "<string>", line 1, in <lambda>
-079_1010110000110, 2.62,   File "<string>", line 1, in <lambda>
-079_1010110010000, 2.58,   File "<string>", line 1, in <lambda>
-079_1010111111101, 2.29,   File "<string>", line 1, in <lambda>
-079_1011000000100, 3.38,   File "<string>", line 1, in <lambda>
-079_1011000101011, 3.20,   File "<string>", line 1, in <lambda>
-079_1011000111000, 3.18,   File "<string>", line 1, in <lambda>
-079_1011100111101, 3.09,   File "<string>", line 1, in <lambda>
-079_1011101000111, 2.66,   File "<string>", line 1, in <lambda>
-079_1011110010100, 2.56,   File "<string>", line 1, in <lambda>
-079_1011111001001, 2.45,   File "<string>", line 1, in <lambda>
-079_1011111010000, 2.48,   File "<string>", line 1, in <lambda>
-079_1100000011110, 3.47,   File "<string>", line 1, in <lambda>
-079_1100001010001, 2.82,   File "<string>", line 1, in <lambda>
-079_1100001100001, 2.81,   File "<string>", line 1, in <lambda>
-079_1100010010001, 2.91,   File "<string>", line 1, in <lambda>
-079_1100010010110, 2.83,   File "<string>", line 1, in <lambda>
-079_1100011110110, 2.68,   File "<string>", line 1, in <lambda>
-079_1100111110100, 2.71,   File "<string>", line 1, in <lambda>
-079_1101000011010, 3.66,   File "<string>", line 1, in <lambda>
-079_1101001010001, 3.42,   File "<string>", line 1, in <lambda>
-079_1101001111010, 3.46,   File "<string>", line 1, in <lambda>
-079_1101010001011, 3.28,   File "<string>", line 1, in <lambda>
-079_1101010100001, 3.49,   File "<string>", line 1, in <lambda>
-079_1101010101111, 3.35,   File "<string>", line 1, in <lambda>
-079_1101011101001, 3.44,   File "<string>", line 1, in <lambda>
-079_1101100000001, 3.42,   File "<string>", line 1, in <lambda>
-079_1101100110110, 3.57,   File "<string>", line 1, in <lambda>
-079_1101110001100, 3.25,   File "<string>", line 1, in <lambda>
-079_1101111000110, 3.27,   File "<string>", line 1, in <lambda>
-079_1110000110011, 3.51,   File "<string>", line 1, in <lambda>
-079_1110000111000, 3.79,   File "<string>", line 1, in <lambda>
-079_1110011101110, 2.87,   File "<string>", line 1, in <lambda>
-079_1110101000100, 2.80,   File "<string>", line 1, in <lambda>
-079_1110010100001, 3.00,   File "<string>", line 1, in <lambda>
-079_1110110110011, 2.86,   File "<string>", line 1, in <lambda>
-079_1110111001100, 2.62,   File "<string>", line 1, in <lambda>
-079_1110111110101, 2.60,   File "<string>", line 1, in <lambda>
-079_1111010100001, 3.44,   File "<string>", line 1, in <lambda>
-079_1111010100101, 3.41,   File "<string>", line 1, in <lambda>
+079_0011010101100, 2.64,   File "<string>" ...  in <lambda>
+079_0011011010011, 2.45,   File "<string>" ...  in <lambda>
+079_0011011101000, 2.47,   File "<string>" ...  in <lambda>
+079_0011100001000, 3.05,   File "<string>" ...  in <lambda>
+079_0011100110100, 3.07,   File "<string>" ...  in <lambda>
+079_0011101011100, 2.45,   File "<string>" ...  in <lambda>
+079_0011111110101, 2.29,   File "<string>" ...  in <lambda>
+079_0100001010110, 2.95,   File "<string>" ...  in <lambda>
+079_0100010000010, 2.89,   File "<string>" ...  in <lambda>
+079_0100010101101, 2.91,   File "<string>" ...  in <lambda>
+079_0100100101001, 3.17,   File "<string>" ...  in <lambda>
+079_0100101001100, 2.94,   File "<string>" ...  in <lambda>
+079_0100101111110, 2.82,   File "<string>" ...  in <lambda>
+079_0100110000101, 2.90,   File "<string>" ...  in <lambda>
+079_0100110010101, 2.89,   File "<string>" ...  in <lambda>
+079_0101010010001, 3.50,   File "<string>" ...  in <lambda>
+079_0101011010011, 3.47,   File "<string>" ...  in <lambda>
+079_0101100100010, 3.35,   File "<string>" ...  in <lambda>
+079_0101101111010, 3.48,   File "<string>" ...  in <lambda>
+079_0101111001110, 3.15,   File "<string>" ...  in <lambda>
+079_0110000010101, 3.56,   File "<string>" ...  in <lambda>
+079_0110010100000, 3.21,   File "<string>" ...  in <lambda>
+079_0110011000100, 2.65,   File "<string>" ...  in <lambda>
+079_0110011010011, 2.91,   File "<string>" ...  in <lambda>
+079_0110110101001, 2.93,   File "<string>" ...  in <lambda>
+079_0111000110111, 3.70,   File "<string>" ...  in <lambda>
+079_0111001011101, 3.30,   File "<string>" ...  in <lambda>
+079_0111011000000, 3.22,   File "<string>" ...  in <lambda>
+079_0111011101100, 3.18,   File "<string>" ...  in <lambda>
+079_0111111010010, 2.99,   File "<string>" ...  in <lambda>
+079_0111100111000, 3.61,   File "<string>" ...  in <lambda>
+079_1000011101101, 2.59,   File "<string>" ...  in <lambda>
+079_0111111100111, 3.07,   File "<string>" ...  in <lambda>
+079_0111111101001, 3.11,   File "<string>" ...  in <lambda>
+079_1000101011100, 2.42,   File "<string>" ...  in <lambda>
+079_1000111101110, 2.52,   File "<string>" ...  in <lambda>
+079_1001001111011, 2.70,   File "<string>" ...  in <lambda>
+079_1001010011101, 2.76,   File "<string>" ...  in <lambda>
+079_1001010011110, 2.75,   File "<string>" ...  in <lambda>
+079_1001010110001, 2.77,   File "<string>" ...  in <lambda>
+079_1001011000111, 2.70,   File "<string>" ...  in <lambda>
+079_1001011100111, 2.71,   File "<string>" ...  in <lambda>
+079_1001011110000, 2.70,   File "<string>" ...  in <lambda>
+079_1001011110010, 2.82,   File "<string>" ...  in <lambda>
+079_1001100100000, 2.83,   File "<string>" ...  in <lambda>
+079_1001101011101, 2.78,   File "<string>" ...  in <lambda>
+079_1001101111110, 2.93,   File "<string>" ...  in <lambda>
+079_1010010010001, 2.77,   File "<string>" ...  in <lambda>
+079_1010010011001, 2.64,   File "<string>" ...  in <lambda>
+079_1010010110001, 2.77,   File "<string>" ...  in <lambda>
+079_1010011111001, 2.54,   File "<string>" ...  in <lambda>
+079_1010101000011, 2.62,   File "<string>" ...  in <lambda>
+079_1010110000110, 2.62,   File "<string>" ...  in <lambda>
+079_1010110010000, 2.58,   File "<string>" ...  in <lambda>
+079_1010111111101, 2.29,   File "<string>" ...  in <lambda>
+079_1011000000100, 3.38,   File "<string>" ...  in <lambda>
+079_1011000101011, 3.20,   File "<string>" ...  in <lambda>
+079_1011000111000, 3.18,   File "<string>" ...  in <lambda>
+079_1011100111101, 3.09,   File "<string>" ...  in <lambda>
+079_1011101000111, 2.66,   File "<string>" ...  in <lambda>
+079_1011110010100, 2.56,   File "<string>" ...  in <lambda>
+079_1011111001001, 2.45,   File "<string>" ...  in <lambda>
+079_1011111010000, 2.48,   File "<string>" ...  in <lambda>
+079_1100000011110, 3.47,   File "<string>" ...  in <lambda>
+079_1100001010001, 2.82,   File "<string>" ...  in <lambda>
+079_1100001100001, 2.81,   File "<string>" ...  in <lambda>
+079_1100010010001, 2.91,   File "<string>" ...  in <lambda>
+079_1100010010110, 2.83,   File "<string>" ...  in <lambda>
+079_1100011110110, 2.68,   File "<string>" ...  in <lambda>
+079_1100111110100, 2.71,   File "<string>" ...  in <lambda>
+079_1101000011010, 3.66,   File "<string>" ...  in <lambda>
+079_1101001010001, 3.42,   File "<string>" ...  in <lambda>
+079_1101001111010, 3.46,   File "<string>" ...  in <lambda>
+079_1101010001011, 3.28,   File "<string>" ...  in <lambda>
+079_1101010100001, 3.49,   File "<string>" ...  in <lambda>
+079_1101010101111, 3.35,   File "<string>" ...  in <lambda>
+079_1101011101001, 3.44,   File "<string>" ...  in <lambda>
+079_1101100000001, 3.42,   File "<string>" ...  in <lambda>
+079_1101100110110, 3.57,   File "<string>" ...  in <lambda>
+079_1101110001100, 3.25,   File "<string>" ...  in <lambda>
+079_1101111000110, 3.27,   File "<string>" ...  in <lambda>
+079_1110000110011, 3.51,   File "<string>" ...  in <lambda>
+079_1110000111000, 3.79,   File "<string>" ...  in <lambda>
+079_1110011101110, 2.87,   File "<string>" ...  in <lambda>
+079_1110101000100, 2.80,   File "<string>" ...  in <lambda>
+079_1110010100001, 3.00,   File "<string>" ...  in <lambda>
+079_1110110110011, 2.86,   File "<string>" ...  in <lambda>
+079_1110111001100, 2.62,   File "<string>" ...  in <lambda>
+079_1110111110101, 2.60,   File "<string>" ...  in <lambda>
+079_1111010100001, 3.44,   File "<string>" ...  in <lambda>
+079_1111010100101, 3.41,   File "<string>" ...  in <lambda>
 080_000000000010010, 0.47, Number of attractors: 2
-079_1111011111011, 3.45,   File "<string>", line 1, in <lambda>
-079_1111100100100, 3.38,   File "<string>", line 1, in <lambda>
+079_1111011111011, 3.45,   File "<string>" ...  in <lambda>
+079_1111100100100, 3.38,   File "<string>" ...  in <lambda>
 080_000000100100011, 0.55, Number of attractors: 2
-079_1111101010110, 2.90,   File "<string>", line 1, in <lambda>
+079_1111101010110, 2.90,   File "<string>" ...  in <lambda>
 080_000010000100001, 0.50, Number of attractors: 2
 080_000010011001001, 0.43, Number of attractors: 2
 080_000010101110011, 0.46, Number of attractors: 2
@@ -7328,11 +7328,11 @@ Benchmark, Time[s]
 123_11000001011011100, 0.51, Number of attractors: 8
 123_11000011010011101, 0.50, Number of attractors: 8
 123_11000011011011111, 0.50, Number of attractors: 8
-123_11001010001001001, 0.44, line 20:0 extraneous input 'v_csa15_Nsp4_ALG11_complex_endoplasmic_reticulum' expecting ','
-123_11001010100100111, 0.45, line 20:0 extraneous input 'v_csa15_Nsp4_ALG11_complex_endoplasmic_reticulum' expecting ','
-123_11001010110101110, 0.46, line 20:0 extraneous input 'v_csa15_Nsp4_ALG11_complex_endoplasmic_reticulum' expecting ','
-123_11001100010010100, 0.46, line 20:0 extraneous input 'v_csa15_Nsp4_ALG11_complex_endoplasmic_reticulum' expecting ','
-123_11010000101011100, 0.46, line 20:0 extraneous input 'v_csa15_Nsp4_ALG11_complex_endoplasmic_reticulum' expecting ','
+123_11001010001001001, 0.44, line 20:0 extraneous input 'v_csa15_Nsp4_ALG11_complex_endoplasmic_reticulum' expecting 'coma'
+123_11001010100100111, 0.45, line 20:0 extraneous input 'v_csa15_Nsp4_ALG11_complex_endoplasmic_reticulum' expecting 'coma'
+123_11001010110101110, 0.46, line 20:0 extraneous input 'v_csa15_Nsp4_ALG11_complex_endoplasmic_reticulum' expecting 'coma'
+123_11001100010010100, 0.46, line 20:0 extraneous input 'v_csa15_Nsp4_ALG11_complex_endoplasmic_reticulum' expecting 'coma'
+123_11010000101011100, 0.46, line 20:0 extraneous input 'v_csa15_Nsp4_ALG11_complex_endoplasmic_reticulum' expecting 'coma'
 123_11010010011010110, 0.48, Number of attractors: 8
 123_11010010111100101, 0.51, Number of attractors: 8
 123_11011010001001101, 0.48, Number of attractors: 8
@@ -9226,23 +9226,23 @@ Benchmark, Time[s]
 146_0101011001, 3.45, Number of attractors: 3
 146_0101111110, 3.24, Number of attractors: 2
 146_0101001110, 10.61, Number of attractors: 1
-146_0110000100, 2.23,   File "<string>", line 1, in <lambda>
-146_0110000111, 2.25,   File "<string>", line 1, in <lambda>
-146_0110001000, 2.09,   File "<string>", line 1, in <lambda>
-146_0110101000, 2.31,   File "<string>", line 1, in <lambda>
-146_0110101001, 2.35,   File "<string>", line 1, in <lambda>
-146_0110110011, 2.23,   File "<string>", line 1, in <lambda>
-146_0111010100, 2.32,   File "<string>", line 1, in <lambda>
-146_0111010110, 2.15,   File "<string>", line 1, in <lambda>
-146_0111011100, 2.27,   File "<string>", line 1, in <lambda>
-146_0111011111, 2.36,   File "<string>", line 1, in <lambda>
-146_0111100010, 2.11,   File "<string>", line 1, in <lambda>
-146_0111100110, 2.26,   File "<string>", line 1, in <lambda>
-146_0111101101, 2.07,   File "<string>", line 1, in <lambda>
-146_0111110001, 2.23,   File "<string>", line 1, in <lambda>
-146_0111110100, 2.16,   File "<string>", line 1, in <lambda>
-146_0111110101, 2.26,   File "<string>", line 1, in <lambda>
-146_0111111010, 2.41,   File "<string>", line 1, in <lambda>
+146_0110000100, 2.23,   File "<string>" ...  in <lambda>
+146_0110000111, 2.25,   File "<string>" ...  in <lambda>
+146_0110001000, 2.09,   File "<string>" ...  in <lambda>
+146_0110101000, 2.31,   File "<string>" ...  in <lambda>
+146_0110101001, 2.35,   File "<string>" ...  in <lambda>
+146_0110110011, 2.23,   File "<string>" ...  in <lambda>
+146_0111010100, 2.32,   File "<string>" ...  in <lambda>
+146_0111010110, 2.15,   File "<string>" ...  in <lambda>
+146_0111011100, 2.27,   File "<string>" ...  in <lambda>
+146_0111011111, 2.36,   File "<string>" ...  in <lambda>
+146_0111100010, 2.11,   File "<string>" ...  in <lambda>
+146_0111100110, 2.26,   File "<string>" ...  in <lambda>
+146_0111101101, 2.07,   File "<string>" ...  in <lambda>
+146_0111110001, 2.23,   File "<string>" ...  in <lambda>
+146_0111110100, 2.16,   File "<string>" ...  in <lambda>
+146_0111110101, 2.26,   File "<string>" ...  in <lambda>
+146_0111111010, 2.41,   File "<string>" ...  in <lambda>
 146_1000100001, 1.89, Number of attractors: 1
 146_1000100110, 1.92, Running time : 0.97 secs
 146_1000101100, 2.10, Number of attractors: 1
@@ -9289,22 +9289,22 @@ Benchmark, Time[s]
 146_1101011101, 2.95, Number of attractors: 2
 146_1101011110, 2.87, Running time : 1.13 secs
 146_1101111101, 2.96, Number of attractors: 2
-146_1110000000, 2.24,   File "<string>", line 1, in <lambda>
-146_1110000001, 2.05,   File "<string>", line 1, in <lambda>
-146_1110000011, 2.14,   File "<string>", line 1, in <lambda>
-146_1110010000, 2.37,   File "<string>", line 1, in <lambda>
-146_1110010011, 2.25,   File "<string>", line 1, in <lambda>
-146_1110011011, 2.15,   File "<string>", line 1, in <lambda>
-146_1110110110, 2.30,   File "<string>", line 1, in <lambda>
-146_1110111001, 2.07,   File "<string>", line 1, in <lambda>
-146_1111001001, 2.19,   File "<string>", line 1, in <lambda>
-146_1111001101, 2.09,   File "<string>", line 1, in <lambda>
-146_1111010100, 2.17,   File "<string>", line 1, in <lambda>
-146_1111011111, 2.26,   File "<string>", line 1, in <lambda>
-146_1111100011, 2.19,   File "<string>", line 1, in <lambda>
-146_1111101000, 2.06,   File "<string>", line 1, in <lambda>
+146_1110000000, 2.24,   File "<string>" ...  in <lambda>
+146_1110000001, 2.05,   File "<string>" ...  in <lambda>
+146_1110000011, 2.14,   File "<string>" ...  in <lambda>
+146_1110010000, 2.37,   File "<string>" ...  in <lambda>
+146_1110010011, 2.25,   File "<string>" ...  in <lambda>
+146_1110011011, 2.15,   File "<string>" ...  in <lambda>
+146_1110110110, 2.30,   File "<string>" ...  in <lambda>
+146_1110111001, 2.07,   File "<string>" ...  in <lambda>
+146_1111001001, 2.19,   File "<string>" ...  in <lambda>
+146_1111001101, 2.09,   File "<string>" ...  in <lambda>
+146_1111010100, 2.17,   File "<string>" ...  in <lambda>
+146_1111011111, 2.26,   File "<string>" ...  in <lambda>
+146_1111100011, 2.19,   File "<string>" ...  in <lambda>
+146_1111101000, 2.06,   File "<string>" ...  in <lambda>
 147_00000, 0.48, Number of attractors: 2
-146_1111111001, 2.16,   File "<string>", line 1, in <lambda>
+146_1111111001, 2.16,   File "<string>" ...  in <lambda>
 147_00001, 0.41, Number of attractors: 2
 147_00010, 0.47, Number of attractors: 2
 147_00011, 0.49, Number of attractors: 2
@@ -9811,12 +9811,12 @@ Benchmark, Time[s]
 159_01100110, 2.53, Number of attractors: 7
 159_01101110, 2.54, Running time : 1.06 secs
 159_01101111, 2.12, Number of attractors: 4
-159_01110000, 1.72,   File "<string>", line 1, in <lambda>
+159_01110000, 1.72,   File "<string>" ...  in <lambda>
 159_01110001, 2.58, Running time : 1.22 secs
 159_01110011, 2.73, Number of attractors: 4
-159_01110100, 1.60,   File "<string>", line 1, in <lambda>
+159_01110100, 1.60,   File "<string>" ...  in <lambda>
 159_01110101, 2.55, Running time : 1.17 secs
-159_01110110, 1.63,   File "<string>", line 1, in <lambda>
+159_01110110, 1.63,   File "<string>" ...  in <lambda>
 159_01110111, 2.75, Number of attractors: 4
 159_01111000, 2.79, Number of attractors: 4
 159_01111001, 2.65, Number of attractors: 3
@@ -9877,8 +9877,8 @@ Benchmark, Time[s]
 159_11100101, 2.34, Number of attractors: 3
 159_11101000, 2.43, Number of attractors: 2
 159_11110001, 2.39, Number of attractors: 2
-159_11110010, 1.53,   File "<string>", line 1, in <lambda>
-159_11110100, 1.45,   File "<string>", line 1, in <lambda>
+159_11110010, 1.53,   File "<string>" ...  in <lambda>
+159_11110100, 1.45,   File "<string>" ...  in <lambda>
 159_11110101, 2.80, Number of attractors: 2
 159_11110110, 2.77, Number of attractors: 2
 159_11110111, 1.50,                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

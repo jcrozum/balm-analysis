@@ -4,6 +4,8 @@ import os
 import time
 import subprocess
 
+sys.setrecursionlimit(1_000_000)
+
 start_time = time.time()
 
 #print("Analyzing network . . .")
@@ -31,3 +33,6 @@ except Exception as e:
 running_time = "%.2f" % (time.time() - start_time - write_file_time)
 print ("Running time : " + running_time + " secs")
 
+# Clean up after analysis
+os.remove("predata/" + bn_name + ".mts")
+os.remove("predata/" + bn_name + ".std")

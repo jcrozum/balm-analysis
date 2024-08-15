@@ -117,17 +117,20 @@ if __name__ == "__main__":
 					# correct time format.
 					print("Fail. Last line of output:")
 					print(lines[-1])
-					TIMES.write(f"{name}, FAIL, {lines[-1]}\n")	
+					# In the final output, we replace all commas with underscores and add enclosing quotes
+					# to ensure that the output is a valid CSV without any extra columns (missing values are 
+					# generally processed ok by libraries like pandas). 
+					TIMES.write(f"{name}, FAIL, \"{lines[-1].replace(',', '_')}\"\n")	
 			elif len(lines) > 0:
 				# Fail: There is some output, but not enough
 				# for a successful process.
 				print("Fail. Last line of output:")
 				print(lines[-1])
-				TIMES.write(name + ", " + "fail" + "\n")
+				TIMES.write(name + ", " + "FAIL" + "\n")
 			else:
 				# Fail: There is no output.
 				print("Fail. No output found.")
-				TIMES.write(name + ", " + "fail" + "\n")
+				TIMES.write(name + ", " + "FAIL" + "\n")
 		TIMES.flush()
 
 	if PARALLEL > 0:
@@ -142,7 +145,7 @@ if __name__ == "__main__":
 				process = Process(target=SPAWN, args=(command,))
 				process.start()
 				ACTIVE.append((process, name, output_file))			
-			time.sleep(1) # Sleep 1s
+			time.sleep(0.25) # Sleep 1s
 			STILL_ACTIVE = []
 			for (process, name, output_file) in ACTIVE:
 				if process.is_alive():

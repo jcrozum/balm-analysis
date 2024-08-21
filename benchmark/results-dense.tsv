@@ -1,0 +1,61 @@
+model	aeon [time]	mts-nfvs [time]	balm-block [time]	balm-full-expand [time]	balm-full-attractors [time]	balm-full-total [time]	attractors	full-sd-size
+dense-1		1.32					1	
+dense-10		0.80					7	
+dense-11		0.76					1	
+dense-12		0.78					1	
+dense-13		0.86					6	
+dense-14		0.83					1	
+dense-15		0.74					4	
+dense-16		1.28					1	
+dense-17		1.22					1	
+dense-18		1.00					1	
+dense-19		0.96					2	
+dense-2		0.72					5	
+dense-20		1.50					1	
+dense-21								
+dense-22								
+dense-23		5.30					10	
+dense-24		6.83					1	
+dense-25		117.14					1	
+dense-26		4.33					1	
+dense-27		8.55					9	
+dense-28		3.30					4	
+dense-29		2.73					3	
+dense-3		0.88					1	
+dense-30		3.72					2	
+dense-31		2.85					2	
+dense-32		7.72					1	
+dense-33		3.01					3	
+dense-34		13.48					1	
+dense-35		3.08					4	
+dense-36		2.30					15	
+dense-37		3.89					2	
+dense-38								
+dense-39		3.38					1	
+dense-4		5.99					1	
+dense-40		172.38					1	
+dense-41								
+dense-42		205.30					4	
+dense-43		89.19					12	
+dense-44		21.43					2	
+dense-45								
+dense-46								
+dense-47								
+dense-48								
+dense-49		64.50					1	
+dense-5		0.84					1	
+dense-50		22.95					2	
+dense-51		14.71					6	
+dense-52		36.25					12	
+dense-53								
+dense-54								
+dense-55		151.34					1	
+dense-56								
+dense-57								
+dense-58		216.88					8	
+dense-59		158.40					1	
+dense-6		0.96					1	
+dense-60								
+dense-7		1.93					3	
+dense-8		0.93					1	
+dense-9		0.89					3	

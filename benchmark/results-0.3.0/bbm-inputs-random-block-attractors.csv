@@ -145,21 +145,21 @@ Benchmark, Time[s]
 002_000111010, 376.87, 13290, 4513, 394, 394, 0
 002_001000111, 581.05, 20847, 6319, 436, 436, 0
 002_000111000, 1026.02, 38515, 12857, 1230, 1230, 0
-002_000010000, FAIL, [6] Generated Petri net restriction with 26 nodes and 52 edges.
-002_000010001, FAIL, [81272] Computed percolated network with 34 variables (vs 139).
+002_000010000, FAIL
+002_000010001, FAIL
 002_001001101, 222.56, 8684, 2791, 434, 434, 0
-002_000100000, FAIL, [43530] Created edge into node 77924.
+002_000100000, FAIL
 002_001001100, 2146.12, 32534, 10689, 1300, 1300, 0
 002_001011011, 579.08, 23141, 7226, 584, 584, 0
 002_001001001, 2732.15, 57113, 17173, 1802, 1802, 0
-002_001001000, FAIL,  > [84545] Computed blocks: [(3, 1), (1, 2), (2, 1), (1, 2), (1, 2)]
+002_001001000, FAIL
 002_001100111, 453.63, 14751, 4167, 148, 148, 0
 002_001100011, 1118.92, 40588, 11060, 586, 586, 0
 002_001101110, 326.49, 11774, 3081, 148, 148, 0
 002_001100110, 1091.46, 37609, 10498, 440, 440, 0
 002_001110101, 651.31, 22328, 6473, 578, 578, 0
-002_001010000, FAIL,  > [61090] Minimal blocks: [(47, 6)]
-002_001010001, FAIL, [0] Generated Petri net restriction with 52 nodes and 160 edges.
+002_001010000, FAIL
+002_001010001, FAIL
 002_010000101, 210.54, 4538, 1452, 16, 16, 0
 002_001110011, 2566.50, 47829, 13521, 582, 582, 0
 002_010011111, 76.44, 880, 439, 3, 3, 0
@@ -185,7 +185,7 @@ Benchmark, Time[s]
 002_011001010, 606.21, 22539, 6219, 194, 194, 0
 002_011011011, 216.18, 7476, 2217, 82, 82, 0
 002_011011101, 123.48, 4634, 1258, 64, 64, 0
-002_010000000, FAIL, [0] Computed percolated network with 21 variables (vs 21).
+002_010000000, FAIL
 002_011011111, 91.77, 3147, 939, 28, 28, 0
 002_011011010, 539.24, 19356, 5602, 194, 194, 0
 002_011100101, 105.24, 4259, 1138, 174, 174, 0
@@ -260,125 +260,125 @@ Benchmark, Time[s]
 002_111000010, 2072.57, 80599, 21084, 568, 568, 0
 002_111010000, 2033.02, [40590] Created edge into node 57068.
 004_0000010001101110001101, 3067.47, [0] Generated Petri net restriction with 732 nodes and 4968 edges.
-004_0000001001010011010101, FAIL, [4012] Found sub-spaces: 13
-004_0000101101000100011111, FAIL, [5585] Created edge into node 15722.
-004_0000101111011110001100, FAIL, [18900] Generated Petri net restriction with 864 nodes and 5904 edges.
+004_0000001001010011010101, FAIL
+004_0000101101000100011111, FAIL
+004_0000101111011110001100, FAIL
 004_0001001110100010110001, 261.69, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_0000110101010011011001, FAIL, [16633] Generated Petri net restriction with 782 nodes and 3840 edges.
+004_0000110101010011011001, FAIL
 004_0001100010001010100111, 244.46, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_0000111001101011001101, FAIL, [5032] Created edge into node 16500.
+004_0000111001101011001101, FAIL
 004_0000111001111101010010, 3489.57,  > [5643] Minimal blocks: [(113, 16)]
 004_0001110010001000110011, 140.13, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_0000111010111111011111, FAIL, domRec ignored: No domain atoms found.
-004_0000111111000111001111, FAIL, domRec ignored: No domain atoms found.
-004_0001011100001100011111, FAIL, [8646] Created edge into node 22140.
+004_0000111010111111011111, FAIL
+004_0000111111000111001111, FAIL
+004_0001011100001100011111, FAIL
 004_0010000100010011100011, 1406.96, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_0010111000010010010101, 106.45, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_0001100101010101010110, FAIL, domRec ignored: No domain atoms found.
-004_0001101111010111101100, FAIL, [0] Generated Petri net restriction with 797 nodes and 5668 edges.
+004_0001100101010101010110, FAIL
+004_0001101111010111101100, FAIL
 004_0010010011000100100111, 3312.97, [5023] Created edge into node 18699.
-004_0010100111101000111000, FAIL, domRec ignored: No domain atoms found.
-004_0010110011001101011010, FAIL, [7784] Created edge into node 30383.
-004_0010111000111101110010, FAIL, [0] Computed percolated network with 138 variables (vs 138).
-004_0011000000001110100011, FAIL, [0] Computed percolated network with 123 variables (vs 123).
-004_0011001001100000000111, FAIL, [5045] Created edge into node 16820.
-004_0011010000100001100100, FAIL, [2318] Found sub-spaces: 9
-004_0011100001000111111010, FAIL, [0] Chosen v_PKA=0 without increasing candidate count (0). 32/42 variables chosen.
-004_0011100010011010111100, FAIL,  > [3519] Found clean block with no MAAs (2): [6784, 8932]
+004_0010100111101000111000, FAIL
+004_0010110011001101011010, FAIL
+004_0010111000111101110010, FAIL
+004_0011000000001110100011, FAIL
+004_0011001001100000000111, FAIL
+004_0011010000100001100100, FAIL
+004_0011100001000111111010, FAIL
+004_0011100010011010111100, FAIL
 004_0100000000101110011110, 431.71, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_0100000000111010000110, 246.51, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_0011110000100011001110, FAIL, [565] Expanding: 82 fixed vars.
-004_0011110101011110011101, FAIL, [10765] Created edge into node 28086.
+004_0011110000100011001110, FAIL
+004_0011110101011110011101, FAIL
 004_0100001010010010101111, 65.99, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_0100010100010011101000, 313.37, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_0011111011101001101110, FAIL, [6558] Created edge into node 19647.
+004_0011111011101001101110, FAIL
 004_0100011110010100101101, 65.12, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_0011111111111011111000, FAIL, [7167] Created edge into node 23566.
+004_0011111111111011111000, FAIL
 004_0100100101101101101011, 198.21, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_0100000010011011111111, FAIL, [2] Generated Petri net restriction with 451 nodes and 1980 edges.
+004_0100000010011011111111, FAIL
 004_0100101110111010110100, 125.65, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_0100000110001011101110, FAIL, [0] Start computing attractor candidates.
+004_0100000110001011101110, FAIL
 004_0100111101100110111100, 88.93, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_0100010001011000111100, FAIL, domRec ignored: No domain atoms found.
-004_0100011001100011000010, FAIL, [0] Created edge into node 6.
+004_0100010001011000111100, FAIL
+004_0100011001100011000010, FAIL
 004_0100110101100100111011, 913.93, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_0101001000110010110001, 79.58, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_0100100011000010010011, FAIL, [0] Chosen v_PIP2_45=0 without increasing candidate count (0). 35/48 variables chosen.
+004_0100100011000010010011, FAIL
 004_0101100000000101110101, 96.66, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_0100101001001011100110, 2679.88, [0] Found sub-spaces: 13
 004_0110000010010111010110, 69.69, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_0101000011011111110111, FAIL, [16831] Generated Petri net restriction with 326 nodes and 1170 edges.
+004_0101000011011111110111, FAIL
 004_0110001100101101100100, 132.63, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_0101000100111011010011, FAIL, [0] > Attractor candidates done: empty NFVS in a non-minimal space.
+004_0101000100111011010011, FAIL
 004_0110010100001110011110, 212.61, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_0101111011111010000001, 3083.54, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_0110010110110000110100, 132.56, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_0101001000101001011000, FAIL, [4235] Created edge into node 16544.
+004_0101001000101001011000, FAIL
 004_0110111100111110010000, 166.62, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_0101100100011001110100, FAIL, [4849] Created edge into node 14143.
-004_0110000111111111001001, FAIL, [7050] Created edge into node 21368.
+004_0101100100011001110100, FAIL
+004_0110000111111111001001, FAIL
 004_0111001001001100001010, 2802.24, domRec ignored: No domain atoms found.
-004_0110001101011001101101, FAIL,  > [7392] Minimal blocks: [(98, 8)]
-004_0110011001010000111100, FAIL, [0] Chosen v_Fak=0 without increasing candidate count (0). 17/44 variables chosen.
-004_0111000101000100111001, FAIL, [0] Chosen v_Ga_1213=0 without increasing candidate count (0). 14/40 variables chosen.
+004_0110001101011001101101, FAIL
+004_0110011001010000111100, FAIL
+004_0111000101000100111001, FAIL
 004_1000000100000110101110, 164.94, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_0111011101100111111010, 827.04, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_1000001000001000100011, 201.25, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_1000001000010000001100, 150.81, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_1000010110000011110101, 123.39, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_1000011010011010111001, 114.93, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_0111010110111011000110, FAIL,  > [6171] Minimal blocks: [(2, 2)]
+004_0111010110111011000110, FAIL
 004_1000110110000101011010, 134.15, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_0111011001111101011100, FAIL, [25466] Generated Petri net restriction with 653 nodes and 2720 edges.
+004_0111011001111101011100, FAIL
 004_1001000110000011100011, 209.59, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_1001001000000110100110, 255.11, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_1000000001111111000101, FAIL, [0] > Initial candidate set empty. Done.
+004_1000000001111111000101, FAIL
 004_1001001000001000111111, 1496.46, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_1001011010100101000101, 135.42, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_1000101010111001100101, FAIL, [4125] Created edge into node 12342.
-004_1000101100011111111010, FAIL, [3647] Created edge into node 11511.
-004_1001000001001001000101, FAIL, [0] Created edge into node 14.
-004_1001000101101001010110, FAIL, [4127] Created edge into node 18774.
+004_1000101010111001100101, FAIL
+004_1000101100011111111010, FAIL
+004_1001000001001001000101, FAIL
+004_1001000101101001010110, FAIL
 004_1001100100010010111101, 262.35, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_1001011011111101110001, 1929.07, [15118] Generated Petri net restriction with 649 nodes and 3286 edges.
-004_1001011001100001100010, FAIL, [4325] Found sub-spaces: 21
+004_1001011001100001100010, FAIL
 004_1010011000000100100011, 1558.36, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_1010000100110010101010, 2891.52, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_1010011010010010001101, 136.69, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_1001101101111111000000, FAIL, [6413] Created edge into node 23850.
-004_1010001011010110100000, FAIL, domRec ignored: No domain atoms found.
-004_1010010011001101010011, FAIL, domRec ignored: No domain atoms found.
+004_1001101101111111000000, FAIL
+004_1010001011010110100000, FAIL
+004_1010010011001101010011, FAIL
 004_1010011011101101011110, 2882.93, Generated global Petri net with 667 nodes and 4344 edges.
-004_1010101000101011001000, FAIL,  > [3812] Minimal blocks: [(2, 2)]
-004_1010111101010100110101, FAIL, domRec ignored: No domain atoms found.
-004_1010111111101100011111, FAIL, [0] > Initial candidate set empty. Done.
+004_1010101000101011001000, FAIL
+004_1010111101010100110101, FAIL
+004_1010111111101100011111, FAIL
 004_1011001110000111011111, 623.15, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_1011000100001100101111, FAIL, [4052] Generated Petri net restriction with 850 nodes and 4566 edges.
-004_1011000111100000100101, FAIL, [2492] Created edge into node 7683.
+004_1011000100001100101111, FAIL
+004_1011000111100000100101, FAIL
 004_1011111010110010000100, 141.93, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_1100011110110100110000, 94.51, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_1100100001100000001000, 385.98, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_1011001011101100001100, FAIL, domRec ignored: No domain atoms found.
-004_1011010011111010010101, FAIL, [5487] Created edge into node 20009.
+004_1011001011101100001100, FAIL
+004_1011010011111010010101, FAIL
 004_1101001000101000111110, 96.71, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_1101001100001000111101, 91.42, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_1101100010111000000000, 180.94, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_1011011110111101011001, FAIL, domRec ignored: No domain atoms found.
-004_1011011111000100110001, FAIL, [0] Chosen v_Myosin=0 without increasing candidate count (288). 25/38 variables chosen.
+004_1011011110111101011001, FAIL
+004_1011011111000100110001, FAIL
 004_1101110010010100001000, 95.08, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_1011101010001000101101, FAIL, [744] Generated Petri net restriction with 859 nodes and 4496 edges.
+004_1011101010001000101101, FAIL
 004_1110001000100100110000, 135.27, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_1110011000111110100111, 110.57, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_1100110110011011001010, FAIL,  > [4954] Minimal blocks: [(2, 2)]
-004_1100110111010101011010, FAIL, [2672] Created edge into node 8049.
+004_1100110110011011001010, FAIL
+004_1100110111010101011010, FAIL
 004_1110111000001000010010, 94.38, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_1101101000001011000101, FAIL, [14538] Generated Petri net restriction with 730 nodes and 3416 edges.
+004_1101101000001011000101, FAIL
 004_1110111001110100001001, 1243.87, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_1110111100101110000110, 213.85, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 004_1110111110110110011001, 67.56, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-004_1110010001001100110110, FAIL, [4] Generated Petri net restriction with 712 nodes and 5224 edges.
-004_1110011011101100000010, FAIL, [5401] Created edge into node 20895.
-004_1110100001001010010011, FAIL, domRec ignored: No domain atoms found.
+004_1110010001001100110110, FAIL
+004_1110011011101100000010, FAIL
+004_1110100001001010010011, FAIL
 004_1111100010111100111100, 143.94, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 005, 0.24, 6, 5, 1, 1, 0
 006_000000, 0.12, 1, 1, 1, 1, 0
@@ -874,7 +874,7 @@ Benchmark, Time[s]
 016_00001010000011, 0.14, 1, 1, 1, 1, 0
 016_00001010011101, 0.12, 1, 1, 1, 1, 0
 016_00001101110101, 0.12, 1, 1, 1, 1, 0
-004_1110101101110000110111, FAIL, [0] > Candidate states optimized to 0.
+004_1110101101110000110111, FAIL
 016_00001111010111, 0.13, 1, 1, 1, 1, 0
 016_00011100001000, 0.12, 1, 1, 1, 1, 0
 016_00011100110001, 0.12, 1, 1, 1, 1, 0
@@ -3929,13 +3929,13 @@ Benchmark, Time[s]
 078_0000011111001, 26.15, 682, 445, 26, 26, 0
 078_0000000010000, 270.75, 5684, 4450, 94, 94, 0
 078_0000100111101, 10.99, 339, 199, 20, 20, 0
-004_1111010111101000011001, FAIL, [0] Start computing attractor candidates.
+004_1111010111101000011001, FAIL
 078_0000100000001, 74.35, 1813, 1485, 76, 76, 0
 078_0000110010101, 25.73, 650, 558, 32, 32, 0
 078_0000101101110, 39.71, 963, 680, 50, 50, 0
 078_0000110111100, 12.76, 491, 229, 32, 32, 0
 078_0000101001110, 71.80, 1577, 1246, 66, 66, 0
-004_1111011111011001101000, FAIL, [8157] Created edge into node 29240.
+004_1111011111011001101000, FAIL
 078_0000111001111, 30.37, 583, 507, 31, 31, 0
 078_0000100000000, 186.38, 5090, 3562, 168, 168, 0
 078_0000110101000, 92.12, 3157, 1705, 136, 136, 0
@@ -3961,7 +3961,7 @@ Benchmark, Time[s]
 078_0001000100110, 155.11, 2677, 2205, 56, 56, 0
 078_0011000000010, 49.44, 597, 588, 16, 16, 0
 078_0001111100100, 71.79, 1950, 1234, 92, 92, 0
-004_1111101111010001101010, FAIL, [6517] Generated Petri net restriction with 565 nodes and 2272 edges.
+004_1111101111010001101010, FAIL
 078_0101001110111, 15.15, 304, 242, 16, 16, 0
 078_0100100001101, 37.81, 904, 651, 46, 46, 0
 078_0101010011111, 13.76, 310, 220, 18, 18, 0
@@ -4052,41 +4052,41 @@ Benchmark, Time[s]
 078_1101110000101, 97.21, 1831, 1572, 76, 76, 0
 078_1101110000000, 197.62, 5102, 3644, 168, 168, 0
 079_0000001001000, 3130.36, [0] Start computing attractor candidates.
-079_0000000100111, FAIL, [10158] Computed percolated network with 19 variables (vs 197).
-079_0000001010010, FAIL, [24132] Generated Petri net restriction with 463 nodes and 2730 edges.
-079_0000001010011, FAIL, [2] Generated Petri net restriction with 87 nodes and 438 edges.
-079_0000001111001, FAIL, [0] Created edge into node 2.
-079_0000010010011, FAIL, [4] Generated Petri net restriction with 509 nodes and 3084 edges.
+079_0000000100111, FAIL
+079_0000001010010, FAIL
+079_0000001010011, FAIL
+079_0000001111001, FAIL
+079_0000010010011, FAIL
 079_0000011011011, 667.13, 4342, 1402, 65, 65, 0
 079_0000010100100, 2076.41, 8683, 2687, 73, 73, 0
 079_0000011011001, 1883.50, 12484, 3868, 178, 178, 0
 079_0000101001010, 3249.09, [0] > Candidates after simulation: 0
-079_0000100010001, FAIL, [6266] Created edge into node 10640.
-079_0000100010100, FAIL, [13367] Created edge into node 16903.
+079_0000100010001, FAIL
+079_0000100010100, FAIL
 079_0000111100101, 798.48, 4778, 1863, 97, 97, 0
-079_0000101010110, FAIL, [27563] Found sub-spaces: 5
-079_0000101100110, FAIL, [16718] Created edge into node 10417.
+079_0000101010110, FAIL
+079_0000101100110, FAIL
 079_0001011001111, 1213.13, 6749, 1719, 65, 65, 0
-079_0000111011010, FAIL, [2] Generated Petri net restriction with 221 nodes and 1548 edges.
+079_0000111011010, FAIL
 079_0001001111010, 2931.91, [16850] Created edge into node 23938.
-079_0001001100111, FAIL, [25961] Created edge into node 31632.
+079_0001001100111, FAIL
 079_0001101001110, 3551.18, [31731] Generated Petri net restriction with 272 nodes and 2082 edges.
-079_0001101011110, FAIL, [0] > Attractor candidates done: empty NFVS in a non-minimal space.
-079_0001101111101, FAIL, Generated global Petri net with 2 nodes and 0 edges.
-079_0001110011001, FAIL, [10905] Generated Petri net restriction with 477 nodes and 3074 edges.
+079_0001101011110, FAIL
+079_0001101111101, FAIL
+079_0001110011001, FAIL
 079_0010011000110, 175.60, 416, 82, 1, 1, 0
 079_0010011000001, 470.39, 3605, 745, 22, 22, 0
 079_0010111110100, 203.10, 416, 82, 1, 1, 0
-079_0001110111011, FAIL, [0] Found sub-spaces: 5
-079_0001111100001, FAIL, [29957] Generated Petri net restriction with 751 nodes and 4522 edges.
+079_0001110111011, FAIL
+079_0001111100001, FAIL
 079_0010100000111, 1837.02, 865, 434, 1, 1, 0
 079_0011001011111, 449.31, 4745, 774, 22, 22, 0
-079_0010000011010, FAIL, [11594] Generated Petri net restriction with 563 nodes and 2492 edges.
-079_0010010011000, FAIL, [0] Generated Petri net restriction with 717 nodes and 5844 edges.
+079_0010000011010, FAIL
+079_0010010011000, FAIL
 079_0011011010011, 1193.47, 7727, 1407, 48, 48, 0
-079_0011000101010, FAIL, [20918] Generated Petri net restriction with 720 nodes and 3666 edges.
-079_0011000110000, FAIL, [7061] Created edge into node 20686.
-079_0011010101100, FAIL, Generated global Petri net with 239 nodes and 2036 edges.
+079_0011000101010, FAIL
+079_0011000110000, FAIL
+079_0011010101100, FAIL
 079_0011101011100, 1685.31, 12098, 1916, 52, 52, 0
 079_0011011101000, 3596.60, 19310, 3961, 144, 144, 0
 079_0011111110101, 1279.65, 8397, 1697, 56, 56, 0
@@ -4094,19 +4094,19 @@ Benchmark, Time[s]
 079_0100101001100, 273.08, 36, 15, 1, 1, 0
 079_0100101111110, 194.62, 51, 16, 1, 1, 0
 079_0100010101101, 978.49, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-079_0011100001000, FAIL,  > [7755] Minimal blocks: [(2, 2), (1, 2)]
-079_0011100110100, FAIL, [5] Generated Petri net restriction with 543 nodes and 2844 edges.
+079_0011100001000, FAIL
+079_0011100110100, FAIL
 079_0100110010101, 163.86, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 079_0100001010110, 1875.59, 20720, 5059, 113, 113, 0
 079_0100110000101, 1152.80, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-079_0100100101001, FAIL, [0] Start simulation minification...
-079_0101010010001, FAIL, [14439] Generated Petri net restriction with 874 nodes and 5692 edges.
-079_0101011010011, FAIL, [0] > Initial candidate set empty. Done.
-079_0101100100010, FAIL, [0] Found sub-spaces: 8
+079_0100100101001, FAIL
+079_0101010010001, FAIL
+079_0101011010011, FAIL
+079_0101100100010, FAIL
 079_0101111001110, 2711.65, 7900, 2433, 114, 114, 0
 079_0110010100000, 480.95, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 079_0110011010011, 370.12, 1102, 223, 8, 8, 0
-079_0101101111010, FAIL, [26293] Expanding: 148 fixed vars.
+079_0101101111010, FAIL
 079_0110110101001, 347.07, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 079_0111001011101, 80.40, 521, 100, 8, 8, 0
 079_0110000010101, 1584.04, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
@@ -4121,59 +4121,59 @@ Benchmark, Time[s]
 079_0111000110111, 2776.47, 14336, 2928, 38, 38, 0
 079_0111111010010, 2872.78, 18734, 4013, 136, 136, 0
 079_1001010011101, 1841.97, 3759, 941, 49, 49, 0
-079_0111100111000, FAIL, [10606] Created edge into node 20119.
+079_0111100111000, FAIL
 079_1001011000111, 1361.61, 9685, 1990, 129, 129, 0
 079_1001011100111, 1361.31, 9685, 1990, 129, 129, 0
 079_1001010011110, 2095.81, 8558, 2144, 50, 50, 0
-079_1001001111011, FAIL, [32879] Expanding: 156 fixed vars.
-079_1001010110001, FAIL, [0] Created edge into node 5.
-079_1001011110000, FAIL, [0] Created edge into node 4.
-079_1001011110010, FAIL, [0] Generated Petri net restriction with 12 nodes and 24 edges.
-079_1001100100000, FAIL, [4317] Created edge into node 11992.
+079_1001001111011, FAIL
+079_1001010110001, FAIL
+079_1001011110000, FAIL
+079_1001011110010, FAIL
+079_1001100100000, FAIL
 079_1010011111001, 118.06, 670, 140, 4, 4, 0
-079_1001101011101, FAIL, [21747] Found sub-spaces: 4
-079_1001101111110, FAIL, [30215] Generated Petri net restriction with 230 nodes and 1324 edges.
+079_1001101011101, FAIL
+079_1001101111110, FAIL
 079_1010010011001, 1114.12, 2370, 494, 4, 4, 0
 079_1010111111101, 73.10, 32, 12, 1, 1, 0
 079_1010101000011, 377.99, 2613, 530, 6, 6, 0
 079_1010110000110, 1271.04, 362, 147, 1, 1, 0
-079_1010010010001, FAIL, [7379] Expanding: 109 fixed vars.
+079_1010010010001, FAIL
 079_1011000000100, 2826.53, [0] Expanding: 0 fixed vars.
 079_1010010110001, 3440.06, 7841, 1596, 12, 12, 0
 079_1011000101011, 3010.27, 18018, 3415, 14, 14, 0
 079_1011100111101, 1913.76, 11112, 2047, 8, 8, 0
-079_1010110010000, FAIL, [1] Generated Petri net restriction with 825 nodes and 6432 edges.
+079_1010110010000, FAIL
 079_1100000011110, 93.33, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 079_1011111001001, 573.03, 5249, 959, 40, 40, 0
 079_1011101000111, 958.46, 9229, 1533, 6, 6, 0
 079_1100010010001, 92.42, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-079_1011000111000, FAIL, [0] > Attractor candidates done: empty NFVS in a non-minimal space.
-079_1011110010100, FAIL, Generated global Petri net with 230 nodes and 2014 edges.
+079_1011000111000, FAIL
+079_1011110010100, FAIL
 079_1100011110110, 1988.00, 689, 206, 57, 57, 0
-079_1011111010000, FAIL, [0] Generated Petri net restriction with 42 nodes and 90 edges.
-079_1100001010001, FAIL, [23699] Created edge into node 31106.
-079_1100001100001, FAIL, [0] Created edge into node 4.
-079_1100010010110, FAIL, [0] Chosen v_PKA=0 without increasing candidate count (0). 27/49 variables chosen.
+079_1011111010000, FAIL
+079_1100001010001, FAIL
+079_1100001100001, FAIL
+079_1100010010110, FAIL
 079_1101010001011, 557.77, 3260, 580, 50, 50, 0
 079_1101010101111, 248.49, 937, 177, 17, 17, 0
 079_1100111110100, 1754.89, 1403, 522, 169, 169, 0
 079_1101001010001, 2197.66, [26942] Generated Petri net restriction with 340 nodes and 2284 edges.
 079_1101011101001, 1447.18, 8649, 1983, 324, 324, 0
-079_1101000011010, FAIL, [32760] Generated Petri net restriction with 295 nodes and 2150 edges.
-079_1101001111010, FAIL, [0] > Percolated node NFVS contains 2 nodes (vs 2 in the root).
+079_1101000011010, FAIL
+079_1101001111010, FAIL
 079_1101110001100, 1268.47, 4128, 928, 146, 146, 0
-079_1101010100001, FAIL, [0] Created edge into node 2.
+079_1101010100001, FAIL
 079_1101111000110, 969.68, 7670, 1698, 226, 226, 0
 079_1110000110011, 485.65, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 079_1110011101110, 269.92, 25, 10, 1, 1, 0
 079_1110000111000, 873.13, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
-079_1101100000001, FAIL, [0] Found sub-spaces: 2
+079_1101100000001, FAIL
 079_1110101000100, 667.06, 48, 25, 1, 1, 0
 079_1110111001100, 410.73, 25, 10, 1, 1, 0
 079_1110010100001, 1095.06, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 079_1110111110101, 428.38, RuntimeError: Exceeded the maximum amount of attractor candidates (100000; see `SuccessionDiagramConfiguation.attractor_candidates_limit`).
 079_1111011111011, 172.44, 1635, 258, 14, 14, 0
-079_1101100110110, FAIL, [0] Created edge into node 2.
+079_1101100110110, FAIL
 080_000000000010010, 0.26, 3, 3, 2, 2, 0
 080_000000100100011, 0.13, 3, 3, 2, 2, 0
 080_000010000100001, 0.14, 3, 3, 2, 2, 0
@@ -7109,7 +7109,7 @@ Benchmark, Time[s]
 122_0000100111100100010010001010000000100010000011110010110111001011010001011100111101100001010111, fail
 122_0000101011010111110101000101010100001000000011101100011011111010111000110110101110111100010011, fail
 122_0000101110011011101001110111100100000110111101001001101110011101001111100110100000011001000010, fail
-079_1111100100100, FAIL, [7981] Created edge into node 11039.
+079_1111100100100, FAIL
 122_0000111011111001011111110101111001101101111010110101101001110111011110000001001000110101100000, fail
 122_0001011011010000100010001110110101011111111100011111011100010111110101101000010000111011011011, fail
 122_0001011100001100010010001010111001100011010001010101010110110000011101010111101111101000111101, fail

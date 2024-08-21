@@ -9,10 +9,12 @@ DEPTH_LIMIT = 10_000
 
 bn = BooleanNetwork.from_file(sys.argv[1])
 bn = bn.infer_valid_graph()
+bn = bn.inline_constants(infer_constants=True, repair_graph=True)
+print(f"Simplified network: {bn}")
 
 # Load the precomputed succession diagram. If the file does not
 # exist, this will fail, which is fine.
-with open(f"{sys.argv[1]}.sd.bfs.pickle", "rb") as handle:
+with open(f"{sys.argv[1]}.sd.pickle", "rb") as handle:
     sd = pickle.load(handle)
 
 print(f"Succession diagram size:", len(sd))
@@ -26,6 +28,9 @@ for node in sd.node_ids():
     attractor_count += len(attr)
     if not sd.node_is_minimal(node):
         motif_avoidant_count += len(attr)
+
+with open(f"{sys.argv[1]}.sd.pickle", "wb") as handle:
+    pickle.dump(sd, handle)
 
 print("nodes, minimal-traps, attractors, motif-avoidant")
 print(

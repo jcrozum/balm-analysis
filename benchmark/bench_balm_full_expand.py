@@ -9,10 +9,14 @@ DEPTH_LIMIT = 10_000
 
 bn = BooleanNetwork.from_file(sys.argv[1])
 bn = bn.infer_valid_graph()
+bn = bn.inline_constants(infer_constants=True, repair_graph=True)
+print(f"Simplified network: {bn}")
 
 # Prepare a config which will print progress.
 config = SuccessionDiagram.default_config()
 config["debug"] = True
+config["max_motifs_per_node"] = 1_000_000
+config["attractor_candidates_limit"] = 100_000
 
 # Compute the succession diagram.
 sd = SuccessionDiagram(bn, config)
@@ -22,7 +26,7 @@ assert fully_expanded
 # Save some memory.
 sd.reclaim_node_data()
 
-with open(f"{sys.argv[1]}.sd.bfs.pickle", "wb") as handle:
+with open(f"{sys.argv[1]}.sd.pickle", "wb") as handle:
     pickle.dump(sd, handle)
 
 print(f"Succession diagram size:", len(sd))

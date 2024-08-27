@@ -2,14 +2,17 @@ from biodivine_aeon import BooleanNetwork
 
 import os
 
-# directory = "balm-analysis/models/bbm-bnet-inputs-true"
-# log_loc = "balm-analysis/models/statistical_test/bbm_topology.csv"
+# directory = "bbm-bnet-inputs-true"
+# log_loc = "bbm_topology.csv"
 
-directory = "balm-analysis/models/statistical_test/random_nk2"
-log_loc = "balm-analysis/models/statistical_test/nk2_topology.csv"
+directory = "random_ncf"
+log_loc = "ncf_topology.csv"
 
-# directory = "balm-analysis/models/statistical_test/random_nk3"
-# log_loc = "balm-analysis/models/statistical_test/nk3_topology.csv"
+# directory = "random_nk2"
+# log_loc = "nk2_topology.csv"
+
+# directory = "random_nk3"
+# log_loc = "nk3_topology.csv"
 
 
 for filename in os.listdir(directory):

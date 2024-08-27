@@ -3,17 +3,17 @@ import csv
 
 import pystablemotifs.random_boolean_networks as rbn
 
-file = open("balm-analysis/models/statistical_test/bbm_list.csv", "r")
+file = open("bbm_list.csv", "r")
 csv_file = csv.reader(file)
 
 PER_MODEL = 100
 # K = 3  # in-degree
 # p = 0.211325 # ratio of 1 in the truth table
-# DIRECTORY = "balm-analysis/models/statistical_test/random_nk3"
+# DIRECTORY = "random_nk3"
 
 K = 2  # in-degree
 p = 0.5 # ratio of 1 in the truth table
-DIRECTORY = "balm-analysis/models/statistical_test/random_nk2"
+DIRECTORY = "random_nk2"
 
 next(csv_file)
 for line in csv_file:

@@ -105,7 +105,7 @@ for folder in os.listdir('./results-raw'):
 	if not os.path.isdir(f"./results-raw/{folder}"):
 		# Folders in results-raw contain experimental datasets.
 		continue
-	print("Processing", folder)
+	print(" >> Processing", folder)
 	for experiment in os.listdir(f"./results-raw/{folder}"):
 		if not os.path.isdir(f"./results-raw/{folder}/{experiment}") or not experiment.startswith("_run_"):
 			# Experiments are folders that start with _run_
@@ -144,19 +144,23 @@ for folder in os.listdir('./results-raw'):
 		with open(f"./results-raw/{folder}/{experiment}/{stats_file}") as csvfile:
 			reader = csv.reader(csvfile, delimiter=',')
 			next(reader) # Skip header
+			success = 0
 			total = 0
 			for row in reader:
+				total += 1
 				row_data = read_row(tool, row)
 				if row_data is not None:
+					success += 1
 					(model, time, attr) = row_data
 					model = f"{model_type}-{model}"
-					data[model_type][model] = (time, attr)
-					total += 1
+					# Ensure that we are not inserting duplicate data.
+					assert model not in data[model_type]
+					data[model_type][model] = (time, attr)					
 					all_models[model_type].add(model)
 				else:
 					model = f"{model_type}-{row[0]}"
 					all_models[model_type].add(model)					
-			print("Successful models:", total)
+			print(f"Successful models: {success}/{total}")
 
 # Check that the data is ok
 
@@ -165,24 +169,28 @@ for model_type in all_models:
 	print(model_type, len(all_models[model_type]))
 
 errors = 0
+
 for model_type in ["bbm", "nk2", "nk3", "ncf", "dense"]:
 	for model in all_models[model_type]:
 		if model in balm_block_data[model_type]:
 			if model in aeon_data[model_type]:
 				if aeon_data[model_type][model][1] != balm_block_data[model_type][model][1]:
-					print(f"Found AEON error in {model}. Removed.")
-					del aeon_data[model_type][model]
-					errors += 1
+					# TODO: Remove condition once the data is ok.
+					if aeon_data[model_type][model][1] <= balm_block_data[model_type][model][1]:
+						print(f"Found AEON error in {model}.")
+						print(f"\tRemoved {aeon_data[model_type][model][1]} != {balm_block_data[model_type][model][1]}.")
+						del aeon_data[model_type][model]
+						errors += 1
 			if model in mts_data[model_type]:
 				if mts_data[model_type][model][1] != balm_block_data[model_type][model][1]:
-					print(f"Found NFVS error in {model}. Removed.")
-					del mts_data[model_type][model]
-					errors += 1
+					# TODO: Remove condition once the data is ok.
+					if mts_data[model_type][model][1] <= balm_block_data[model_type][model][1]:
+						print(f"Found NFVS error in {model}.")
+						print(f"\tRemoved {mts_data[model_type][model][1]} != {balm_block_data[model_type][model][1]}.")
+						del mts_data[model_type][model]
+						errors += 1
 			if model in balm_attr_data[model_type]:
-				if balm_attr_data[model_type][model][1] != balm_block_data[model_type][model][1]:
-					print(f"Found BALM error in {model}. Removed.")
-					del balm_block_data[model_type][model][1]
-					errors += 1
+				assert balm_attr_data[model_type][model][1] == balm_block_data[model_type][model][1]
 
 print("Measurements removed due to mismatch errors:", errors)
 
@@ -227,3 +235,29 @@ for model_type in ["bbm", "nk2", "nk3", "ncf", "dense"]:
 			row[7] = attractors
 			row[8] = full_sd_size
 			writer.writerow(row)
+	print(f"Data written to results-{model_type}.tsv")
+
+
+# Print models that the other tool solved, but we didn't:
+
+print("Solved by AEON but not biobalm:")
+for model_type in ["bbm", "nk2", "nk3", "ncf", "dense"]:
+	for model in sorted(all_models[model_type]):
+		if model in aeon_data[model_type] and model not in balm_block_data[model_type]:
+			print(f" >> {model}")
+
+print("Solver by mtsNFVs but not biobalm:")
+for model_type in ["bbm", "nk2", "nk3", "ncf", "dense"]:
+	for model in sorted(all_models[model_type]):
+		if model in mts_data[model_type] and model not in balm_block_data[model_type]:
+			print(f" >> {model}")
+
+print("Solved by biobalm but not by aeon or mtsNFVS:")
+count = 0
+for model_type in ["bbm", "nk2", "nk3", "ncf", "dense"]:
+	for model in sorted(all_models[model_type]):
+		if (model in balm_block_data[model_type]) and (model not in mts_data[model_type]) and (model not in aeon_data[model_type]):
+			count += 1
+			print(f" >> {model}")
+
+print(" >> Total:", count)

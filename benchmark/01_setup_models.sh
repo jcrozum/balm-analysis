@@ -35,7 +35,11 @@ cp ../models/bbm-bnet-inputs-random-128/210* models-hard/bbm-random
 cp ../models/bbm-bnet-inputs-random-128/211* models-hard/bbm-random
 
 # Other BBM models are "easy".
-cp ../models/bbm-bnet-inputs-random-128/* models-easy/bbm-random
+# macOS will consider this as too many files if copied at once.
+# Thus we do it in three steps.
+cp ../models/bbm-bnet-inputs-random-128/0* models-easy/bbm-random
+cp ../models/bbm-bnet-inputs-random-128/1* models-easy/bbm-random
+cp ../models/bbm-bnet-inputs-random-128/2* models-easy/bbm-random
 rm models-easy/bbm-random/002*
 rm models-easy/bbm-random/004*
 rm models-easy/bbm-random/079*

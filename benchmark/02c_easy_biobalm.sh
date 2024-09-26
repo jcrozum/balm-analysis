@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# If anything fails, we need to abort the script.
+set -e
+
 # Generate a performance artefact for biobalm and all easy model instances.
 
 ./00_setup_biobalm.sh

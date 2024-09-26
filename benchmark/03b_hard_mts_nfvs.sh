@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# If anything fails, we need to abort the script.
+set -e
+
 # Generate a performance artefact for mts-nfvs and all hard model instances.
 
 ./00_setup_mts_nfvs.sh
@@ -21,11 +24,11 @@ TIMEOUT=1h
 
 set -x
 
-./venv/bin/python3 run_bench.py $TIMEOUT models-hard/bbm-random bench_mts_nfvs_attractors.py -p 4
-./venv/bin/python3 run_bench.py $TIMEOUT models-hard/random-nk2 bench_mts_nfvs_attractors.py -p 4
-./venv/bin/python3 run_bench.py $TIMEOUT models-hard/random-nk3 bench_mts_nfvs_attractors.py -p 4
-./venv/bin/python3 run_bench.py $TIMEOUT models-hard/random-ncf bench_mts_nfvs_attractors.py -p 4
-./venv/bin/python3 run_bench.py $TIMEOUT models-hard/random-dense bench_mts_nfvs_attractors.py -p 4
+./venv/bin/python3 run_bench.py $TIMEOUT models-hard/bbm-random bench_mts_nfvs_attractors.py -p 2
+./venv/bin/python3 run_bench.py $TIMEOUT models-hard/random-nk2 bench_mts_nfvs_attractors.py -p 2
+./venv/bin/python3 run_bench.py $TIMEOUT models-hard/random-nk3 bench_mts_nfvs_attractors.py -p 2
+./venv/bin/python3 run_bench.py $TIMEOUT models-hard/random-ncf bench_mts_nfvs_attractors.py -p 2
+./venv/bin/python3 run_bench.py $TIMEOUT models-hard/random-dense bench_mts_nfvs_attractors.py -p 2
 
 zip -r perf-mts-nfvs-hard-`hostname`.zip _run_*
 rm -rf _run_*

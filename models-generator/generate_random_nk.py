@@ -2,8 +2,9 @@ import os
 
 import pystablemotifs.random_boolean_networks as rbn
 
-N_NODES_LIST = [10, 20, 40, 80, 160, 320]
+N_NODES_LIST = [10, 20, 40, 80, 160, 320, 640, 1280, 2560]
 GRAPHS_PER_SIZE = 100
+# For K=2, use p=0.5, for K=3, use p=0.211325
 K = 3  # in-degree
 p = 0.211325 # ratio of 1 in the truth table
 DIRECTORY = "models/random_nk3"

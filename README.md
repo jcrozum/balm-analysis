@@ -5,6 +5,7 @@ This archive contains all the code and data necessary to reproduce the results p
 
 ### Artefact structure
 
+ * `models-generator`: Scripts used to generate random models. You don't have to use these, the generated models are already included. These are just for completeness.
  * `models`: Model files that are used during testing of `biobalm`.
  * `benchmark-attractor`: Scripts necessary for reproducing the attractor detection comparison between `biobalm`, `aeon`, and `mts-nfvs`, including out measured data.
  * `benchmark-construction`: Comparison of full succession diagram construction between `biobalm` and `pystablemotifs`.

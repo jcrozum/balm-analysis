@@ -7,11 +7,11 @@ import numpy as np
 from benchmark_figures_utils import load_combined_data
 
 result_files = {
-    "bbm": "../benchmark/results-bbm.tsv",
-    "dense": "../benchmark/results-dense.tsv",
-    "nk2": "../benchmark/results-nk2.tsv",
-    "nk3": "../benchmark/results-nk3.tsv",
-    "ncf": "../benchmark/results-ncf.tsv"
+    "bbm": "../benchmark-attractor/results-bbm.tsv",
+    "dense": "../benchmark-attractor/results-dense.tsv",
+    "nk2": "../benchmark-attractor/results-nk2.tsv",
+    "nk3": "../benchmark-attractor/results-nk3.tsv",
+    "ncf": "../benchmark-attractor/results-ncf.tsv"
 }
 
 colors = {

@@ -67,21 +67,21 @@ axd = afig.subplot_mosaic(
 # Add colored backgrounds.
 
 bad_area = patches.Polygon(
-    xy=[(0.001,0.01),(360,3600), (0.001,3600)],
+    xy=[(0.001,1), (0.1,1), (360,3600), (0.001,3600)],
     closed=True,
     facecolor='#ff0000',
     alpha=0.05
 )
 
 good_area = patches.Polygon(
-    xy=[(0.01,0.001),(3600,360), (3600,0.001)],
+    xy=[(1,0.001), (1,0.1), (3600,360), (3600,0.001)],
     closed=True,
     facecolor='#00ff00',
     alpha=0.05
 )
 
 meh_area = patches.Polygon(
-    xy=[(0.001,0.01), (360,3600), (3600,3600), (3600,360), (0.01,0.001), (0.001,0.001)],
+    xy=[(0.001,0.01), (0.001,1), (0.1,1), (360,3600), (3600,3600), (3600,360), (1,0.1), (1,0.001), (0.001,0.001)],
     closed=True,
     facecolor='#000000',
     alpha=0.05
@@ -173,18 +173,23 @@ for i, (tool, tool_column) in enumerate([('AEON.py', "aeon [time]"), ("mtsNFVS",
         label=tool,
     )
     
-    boundary_points = np.logspace(np.log10(bounds[0]), np.log10(bounds[1]), 10)
+    boundary_points = np.logspace(np.log10(0.1), np.log10(bounds[1]), 10)
+    boundary_point_values = boundary_points * 10
 
+    boundary_points = np.concatenate(([0.001], boundary_points))
+    boundary_point_values = np.concatenate(([1], boundary_point_values))
+    
     axd["BothFinished"].plot(
         boundary_points,
-        boundary_points*10,
+        boundary_point_values,
         color="black",
         linestyle="dashdot",
         linewidth=2,
         alpha=0.25,
     )
+
     axd["BothFinished"].plot(
-        boundary_points*10,
+        boundary_point_values,
         boundary_points,
         color="black",
         linestyle="dashdot",
@@ -218,9 +223,28 @@ for i, (tool, tool_column) in enumerate([('AEON.py', "aeon [time]"), ("mtsNFVS",
     print("Balm, completed, failed", sum(data_balm < float("inf")), sum(data_balm == float("inf")))
     print("Tool, completed, failed", sum(data_tool < float("inf")), sum(data_tool == float("inf")))
 
-    balm_slower_count = sum(((10*data_tool) <= data_balm) & (data_balm < float("inf")))
-    balm_faster_count = sum(((10*data_balm) <= data_tool) & (data_tool < float("inf")))
-    same_count = sum(((10*data_balm) > data_tool) & ((data_balm < (10*data_tool))))
+    tool_easy = data_tool <= 1
+    balm_easy = data_balm <= 1
+
+    balm_slower_count = sum(
+        ((10*data_tool) <= data_balm) & 
+        (data_balm < float("inf")) & 
+        ~(tool_easy & balm_easy)
+    )
+
+    balm_faster_count = sum(
+        ((10*data_balm) <= data_tool) & 
+        (data_tool < float("inf")) &
+        ~(tool_easy & balm_easy)
+    )
+    
+    same_count_hard = sum(
+        ((10*data_balm) > data_tool) & 
+        ((data_balm < (10*data_tool))) &
+        ~(tool_easy & balm_easy)
+    )
+    same_count = same_count_hard + sum(tool_easy & balm_easy)
+    
     balm_failed_count = sum((data_balm == float("inf")) & (data_tool < float("inf")))
     tool_failed_count = sum((data_tool == float("inf")) & (data_balm < float("inf")))
     both_failed_count = sum((data_tool == float("inf")) & (data_balm == float("inf")))
@@ -327,21 +351,21 @@ def simple_scatter_figure(
     # Add colored backgrounds.
 
     bad_area = patches.Polygon(
-        xy=[(0.001,0.01),(360,3600), (0.001,3600)],
+        xy=[(0.001,1), (0.1,1), (360,3600), (0.001,3600)],
         closed=True,
         facecolor='#ff0000',
         alpha=0.05
     )
 
     good_area = patches.Polygon(
-        xy=[(0.01,0.001),(3600,360), (3600,0.001)],
+        xy=[(1,0.001), (1,0.1), (3600,360), (3600,0.001)],
         closed=True,
         facecolor='#00ff00',
         alpha=0.05
     )
 
     meh_area = patches.Polygon(
-        xy=[(0.001,0.01), (360,3600), (3600,3600), (3600,360), (0.01,0.001), (0.001,0.001)],
+        xy=[(0.001,0.01), (0.001,1), (0.1,1), (360,3600), (3600,3600), (3600,360), (1,0.1), (1,0.001), (0.001,0.001)],
         closed=True,
         facecolor='#000000',
         alpha=0.05
@@ -424,18 +448,23 @@ def simple_scatter_figure(
         s=marker_size,
     )
     
-    boundary_points = np.logspace(np.log10(bounds[0]), np.log10(bounds[1]), 10)
+    boundary_points = np.logspace(np.log10(0.1), np.log10(bounds[1]), 10)
+    boundary_point_values = boundary_points * 10
 
+    boundary_points = np.concatenate(([0.001], boundary_points))
+    boundary_point_values = np.concatenate(([1], boundary_point_values))
+    
     axd["XY-Finished"].plot(
         boundary_points,
-        boundary_points*10,
+        boundary_point_values,
         color="black",
         linestyle="dashdot",
         linewidth=2,
         alpha=0.25,
     )
+
     axd["XY-Finished"].plot(
-        boundary_points*10,
+        boundary_point_values,
         boundary_points,
         color="black",
         linestyle="dashdot",
@@ -462,10 +491,29 @@ def simple_scatter_figure(
 
     xy_timeout = (data_tool == float("inf")) & (data_balm == float("inf"))
     
+    x_easy = data_x <= 1
+    y_easy = data_y <= 1
+
+    y_slower_count = sum(
+        ((10*data_x) <= data_y) & 
+        (data_y < float("inf")) & 
+        ~(x_easy & y_easy)
+    )
+
+    y_faster_count = sum(
+        ((10*data_y) <= data_x) & 
+        (data_x < float("inf")) &
+        ~(x_easy & y_easy)
+    )
     
-    y_slower_count = sum(((10*data_x) <= data_y) & (data_y < float("inf")))
-    y_faster_count = sum(((10*data_y) <= data_x) & (data_x < float("inf")))
-    same_count = sum(((10*data_y) > data_x) & ((data_y < (10*data_x))))
+    same_count_hard = sum(
+        ((10*data_y) > data_x) & 
+        ((data_y < (10*data_x))) &
+        ~(x_easy & y_easy)
+    )
+
+    same_count = same_count_hard + sum(x_easy & y_easy)
+    
     y_failed_count = sum((data_y == float("inf")) & (data_x < float("inf")))
     x_failed_count = sum((data_x == float("inf")) & (data_y < float("inf")))
     xy_failed_count = sum((data_x == float("inf")) & (data_y == float("inf")))

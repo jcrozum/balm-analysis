@@ -17,8 +17,8 @@ result_files = {
 colors = {
     "mtsNFVS": "#DDAA33",
     "AEON.py": "#BB5566",
-    "biobalm[block]": "#66aadd",
-    "biobalm[full]": "#004488",
+    "biobalm": "#66aadd",
+    #"biobalm[full]": "#004488",
 }
 
 results = load_combined_data(result_files)
@@ -28,8 +28,8 @@ print(results.head())
 tool_columns = {
     "AEON.py": "aeon [time]",
     "mtsNFVS": "mts-nfvs [time]",
-    "biobalm[full]": "balm-full-total [time]",
-    "biobalm[block]": "balm-block [time]",
+    "biobalm": "balm-block [time]",
+    #"biobalm[full]": "balm-full-total [time]",
 }
 
 fontsize=14
@@ -75,7 +75,7 @@ for i, (tool, column) in enumerate(tool_columns.items()):
 	)
 
 zoom_xbounds = (1, 3600)
-zoom_ybounds = (13400, total_benchmarks)
+zoom_ybounds = (14250, total_benchmarks)
 
 zoom_rect = patches.Rectangle(
 	xy=(zoom_xbounds[0], zoom_ybounds[0]),
@@ -101,8 +101,8 @@ ax_zoomed.set_xscale("log")
 ax_zoomed.set_xlabel("Runtime (log)", fontsize=fontsize)
 ax_zoomed.set_ylabel("Completed benchmarks", fontsize=fontsize)
 ax_zoomed.set_xlim((1, 3600))
-ax_zoomed.set_ylim((13400, total_benchmarks))
-ax_zoomed.set_yticks([13250,13750,14250,14750,15250,15750,16250,total_benchmarks])
+ax_zoomed.set_ylim((14250, total_benchmarks))
+ax_zoomed.set_yticks([14250,14750,15250,15750,16250,total_benchmarks])
 ax_zoomed.set_xticks([1,10,60,300,3600])
 ax_zoomed.set_xticklabels(["1s","10s","1min","5min","1h"], fontsize=fontsize)
 

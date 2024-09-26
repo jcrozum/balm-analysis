@@ -3,7 +3,6 @@ import sys
 import time
 
 import pystablemotifs
-from biodivine_aeon import BooleanNetwork
 
 sys.setrecursionlimit(150_000)
 path = sys.argv[1]
@@ -16,6 +15,6 @@ primes = pystablemotifs.format.import_primes(path)
 ar = pystablemotifs.AttractorRepertoire.from_primes(
     primes, MPBN_update=True
 )  # MPBN_update just for faster testing
-at.summary()
+ar.summary()
 
 print(f"{ar.fewest_attractors}, {ar.most_attractors}")

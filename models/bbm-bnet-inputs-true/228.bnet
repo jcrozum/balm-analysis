@@ -47,7 +47,7 @@ v_pka, (v_gcgr & !v_akt)
 v_pp2a, v_x5p
 v_ppara, (v_erk12 & v_ppara_g)
 v_ppara_g, ((v_hnf4a | v_ppara) & (v_pgc1a & v_lpin1))
-v_psrebp1c, (((v_lxra & v_sp1) & !v_ppara) | v_nsrebp1c)
+v_psrebp1c, ((v_lxra & (v_sp1 & !v_ppara)) | v_nsrebp1c)
 v_pygl, (!v_pp2a & v_pka)
 v_pyruvate, (v_pyruvate | !v_pyruvate)
 v_sik1, (v_creb & v_torc2)

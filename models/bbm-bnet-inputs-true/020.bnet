@@ -1,14 +1,14 @@
 targets,factors
 v_A20, v_NFkB
 v_AKT, v_PIP3
-v_APC, ((v_Cas9 & (v_Apaf1 & v_Mito)) & !v_IAP)
+v_APC, (v_Cas9 & (v_Apaf1 & (v_Mito & !v_IAP)))
 v_Apaf1, v_p53
 v_Apoptosis, v_DNADamageEvent
 v_BAD, (v_p53 & !v_AKT)
-v_BID, (((v_Cas8 & v_p53) & !v_BclX) | ((v_JNK & v_p53) & !v_BclX))
+v_BID, ((v_Cas8 & (v_p53 & !v_BclX)) | (v_JNK & (v_p53 & !v_BclX)))
 v_BclX, (v_NFkB & !(v_BAD | v_p53))
 v_Cas12, v_Cas7
-v_Cas3, (((v_Cas6 & !v_IAP) | (v_Cas8 & !v_IAP)) | (v_APC & !v_IAP))
+v_Cas3, ((v_Cas6 & !v_IAP) | ((v_Cas8 & !v_IAP) | (v_APC & !v_IAP)))
 v_Cas6, (v_Cas3 & !v_IAP)
 v_Cas7, ((v_APC & !v_IAP) | (v_Cas8 & !v_IAP))
 v_Cas8, ((v_FADD & !v_cFLIP) | (v_Cas6 & !v_cFLIP))
@@ -29,7 +29,7 @@ v_NFkB, !v_IkB
 v_NIK, v_TRAF2
 v_PI3K, v_GFR
 v_PIP2, v_GFR
-v_PIP3, ((v_PI3K & v_PIP2) & !v_PTEN)
+v_PIP3, (v_PI3K & (v_PIP2 & !v_PTEN))
 v_PTEN, v_p53
 v_RIP, v_TRADD
 v_TNF, (v_TNF | !v_TNF)

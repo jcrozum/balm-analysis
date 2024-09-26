@@ -1,6 +1,6 @@
 targets,factors
 v_APC, !v_Dsh
-v_Arm, ((v_Hipk & v_CK1alpha) & !(v_Sgg & (((v_APC & v_Proteasome) & v_Axin) & v_Slmb)))
+v_Arm, (v_Hipk & (v_CK1alpha & !(v_Sgg & (v_APC & (v_Proteasome & (v_Axin & v_Slmb))))))
 v_Arr, v_Wg
 v_Axin, !v_Dsh
 v_Boca, (v_Boca | !v_Boca)
@@ -21,7 +21,7 @@ v_Proteasome, (v_Proteasome | !v_Proteasome)
 v_Pygo, (v_Pygo | !v_Pygo)
 v_Sgg, !v_Dsh
 v_Slmb, (v_Slmb | !v_Slmb)
-v_Targets, ((v_Pygo & (((v_Nej & v_Hyx) & v_Pan) & v_Lgs)) & !v_Gro)
+v_Targets, (v_Pygo & (v_Nej & (v_Hyx & (v_Pan & (v_Lgs & !v_Gro)))))
 v_Ttv, (v_Ttv | !v_Ttv)
 v_Wf, (v_Wf | !v_Wf)
 v_Wg, (v_Wg | !v_Wg)

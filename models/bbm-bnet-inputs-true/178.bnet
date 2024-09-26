@@ -18,7 +18,7 @@ v_FceRI_IgE, (v_Ag_b1 & v_Lyn)
 v_FceRI_IgE_P, v_FceRI_IgE
 v_FcgRIIB, (v_Ag_b1 & v_Ag_b2)
 v_FcgRIIB_P, (v_FcgRIIB & v_Lyn)
-v_GRB2_SOS, (((v_Bcr & !v_ERK) & v_LAT) & !v_RasGAP_Dok1)
+v_GRB2_SOS, (v_Bcr & (!v_ERK & (v_LAT & !v_RasGAP_Dok1)))
 v_Gab2, (v_FYN & v_LAT2)
 v_IP3, (v_PIP2 & v_PLCG1)
 v_JNK, v_MEKK4_7
@@ -33,17 +33,17 @@ v_NF_kB, v_PKC
 v_PAK2, v_Rac1
 v_PI3K, v_Gab2
 v_PIP2, (v_PIP2 | !v_PIP2)
-v_PIP3, ((v_PI3K & v_PIP2) & !v_SHIP_1)
+v_PIP3, (v_PI3K & (v_PIP2 & !v_SHIP_1))
 v_PKC, v_DAG
 v_PLA, v_ERK
-v_PLCG1, ((((v_Btk & !v_LAT) & v_PIP3) & v_Syk) | ((v_Btk & v_LAT) & v_Syk))
+v_PLCG1, ((v_Btk & (!v_LAT & (v_PIP3 & v_Syk))) | (v_Btk & (v_LAT & v_Syk)))
 v_RAS, ((!v_GRB2_SOS & v_PKC) | v_GRB2_SOS)
-v_Rac1, ((v_Bcr & v_SLP_76) & v_VAV)
+v_Rac1, (v_Bcr & (v_SLP_76 & v_VAV))
 v_Raf, v_RAS
 v_RasGAP_Dok1, v_SHIP_1
 v_SHIP_1, v_FcgRIIB_P
 v_SLP_76, v_Syk
-v_Syk, ((((((!v_cCbl & !v_ERK) & v_FceRI_IgE_P) & v_Lyn) | (((!v_cCbl & v_ERK) & !v_FceRI_IgE_P) & v_Syk)) | ((((!v_cCbl & v_ERK) & v_FceRI_IgE_P) & !v_Lyn) & v_Syk)) | (((!v_cCbl & v_ERK) & v_FceRI_IgE_P) & v_Lyn))
+v_Syk, ((!v_cCbl & (!v_ERK & (v_FceRI_IgE_P & v_Lyn))) | ((!v_cCbl & (v_ERK & (!v_FceRI_IgE_P & v_Syk))) | ((!v_cCbl & (v_ERK & (v_FceRI_IgE_P & (!v_Lyn & v_Syk)))) | (!v_cCbl & (v_ERK & (v_FceRI_IgE_P & v_Lyn))))))
 v_VAV, v_Syk
 v_cCbl, (v_cCbl | !v_cCbl)
 v_c_Fos, v_ERK

@@ -13,7 +13,7 @@ v_NUP210_Selinexor_complex, (v_NUP210_endoplasmic_reticulum & v_Selinexor_drug)
 v_NUP210_endoplasmic_reticulum, (v_NUP210_endoplasmic_reticulum | !v_NUP210_endoplasmic_reticulum)
 v_NUP210_nucleus, v_NUP210_endoplasmic_reticulum
 v_Nsp3, v_sa160_Nsp3_____rna
-v_Nsp3_Nsp4_Nsp6_complex, ((v_Nsp3 & v_Nsp6) & v_Nsp4)
+v_Nsp3_Nsp4_Nsp6_complex, (v_Nsp3 & (v_Nsp6 & v_Nsp4))
 v_Nsp4, v_sa3_Nsp4_____rna
 v_Nsp4_DNAJC11_complex, (v_Nsp4 & v_DNAJC11)
 v_Nsp4_IDE_complex, v_csa2_Nsp4_IDE_complex_cell

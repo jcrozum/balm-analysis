@@ -2,7 +2,7 @@ targets,factors
 v_ABA, (v_ABA | !v_ABA)
 v_ABH1, (v_ABH1 | !v_ABH1)
 v_ABPS, (v_CA & (!v_PI3P & !v_PI4P))
-v_ACTIN, ((v_ARP23 & v_SCAB1) & (!v_AtRAC1 & (v_ROS | (v_CA & v_ABPS))))
+v_ACTIN, (v_ARP23 & (v_SCAB1 & (!v_AtRAC1 & (v_ROS | (v_CA & v_ABPS)))))
 v_AHA1, (v_PP1 & (!v_CA & !v_pH))
 v_ARP23, (v_PIP2 | v_ROS)
 v_ATALMT6, v_CA
@@ -51,7 +51,7 @@ v_ROS, (((v_CuAO | v_RBOH) & !v_ATGPX3) | (v_CuAO & v_RBOH))
 v_S1P, v_SK
 v_SCAB1, (v_ABA | v_InSP6)
 v_SK, (v_ABA | v_PA)
-v_SLAC1, (((v_SnRK2 | (v_CDPK & !v_PP2C)) & (v_MAPK & (!v_ERA1 | (v_MRP5 | !v_ABH1)))) & !v_MALATE)
+v_SLAC1, ((v_SnRK2 | (v_CDPK & !v_PP2C)) & (v_MAPK & ((!v_ERA1 | (v_MRP5 | !v_ABH1)) & !v_MALATE)))
 v_SnRK2, !v_PP2C
 v_TPK1, (v_CA & !v_pH)
 v_pH, (v_SnRK2 & !v_AHA1)

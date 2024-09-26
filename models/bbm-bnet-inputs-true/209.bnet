@@ -6,7 +6,7 @@ v_ATR, v_Replication
 v_A_Kinetochores, (v_4N_DNA & (!v_Cdh1 & (!(v_pAPC & v_Cdc20) & (v_A_Kinetochores | (v_U_Kinetochores & (v_Plk1 & (v_CyclinB & v_Cdk1)))))))
 v_BAD, (v_Casp3 | (!(v_AKT_H | (v_AKT_B | (v_ERK | v_S6K))) | (v_Casp8 & (!(v_AKT_B & (v_ERK & v_S6K)) & !(v_AKT_H & (v_AKT_B | v_ERK))))))
 v_BAK, ((v_BID & (v_BIM | (v_BIK | !(v_BCL2 & (v_BCLXL & v_MCL_1))))) | ((v_BIM | v_BIK) & !(v_BCLXL | v_MCL_1)))
-v_BAX, ((v_BIM & ((v_BID | v_BIK) | !(v_BCL2 & (v_BCLXL & v_MCL_1)))) | ((v_BID | v_BIK) & !(v_BCL2 | v_BCLXL)))
+v_BAX, ((v_BIM & (v_BID | (v_BIK | !(v_BCL2 & (v_BCLXL & v_MCL_1))))) | ((v_BID | v_BIK) & !(v_BCL2 | v_BCLXL)))
 v_BCL2, (!(v_Casp3 | (v_BAD | (v_BIM | v_BIK))) & (!v_U_Kinetochores | ((v_MCL_1 & v_BCLXL) | (v_Plk1 & (v_BCLXL | (v_MCL_1 | !(v_Cdk1 & v_CyclinB)))))))
 v_BCLXL, (!v_Casp3 & ((v_BCL2 | !v_BAD) & (!v_U_Kinetochores | ((v_Plk1 & (!(v_CyclinB & v_Cdk1) | (v_BCL2 & v_MCL_1))) | (v_BCL2 & (v_MCL_1 & !(v_CyclinB & v_Cdk1)))))))
 v_BID, (v_Casp8 | (v_Casp2 & !(v_BCL2 | (v_BCLXL | v_MCL_1))))

@@ -2,7 +2,7 @@ targets,factors
 v_GATA3, ((v_STAT6 & !v_Tbet) | (v_GATA3 & !v_Tbet))
 v_IFNb, (v_IFNb | !v_IFNb)
 v_IFNbR, v_IFNb
-v_IFNg, ((((v_Tbet & !v_STAT3) | (v_STAT4 & !v_STAT3)) | (v_IRAK & !v_STAT3)) | (v_NFAT & !v_STAT3))
+v_IFNg, ((v_Tbet & !v_STAT3) | ((v_STAT4 & !v_STAT3) | ((v_IRAK & !v_STAT3) | (v_NFAT & !v_STAT3))))
 v_IFNgR, v_IFNg
 v_IL10, v_GATA3
 v_IL10R, v_IL10

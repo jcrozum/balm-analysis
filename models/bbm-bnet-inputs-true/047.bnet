@@ -13,8 +13,8 @@ v_Msk, (v_Msk | !v_Msk)
 v_PLCg, v_Drk
 v_Pnt, v_Rl
 v_Pyr, (v_Pyr | !v_Pyr)
-v_Raf, (v_Ras & ((v_Cnk & v_Src42) & v_Ksr))
-v_Ras, (((v_Sos & v_Sos) | ((v_Sty & (!v_Gap & !v_Sty)) & !v_Gap)) | ((v_Gap & v_Sos) & !v_Sty))
+v_Raf, (v_Ras & (v_Cnk & (v_Src42 & v_Ksr)))
+v_Ras, ((v_Sos & v_Sos) | ((v_Sty & (!v_Gap & (!v_Sty & !v_Gap))) | (v_Gap & (v_Sos & !v_Sty))))
 v_Rl, (v_Dsor1 & v_Msk)
 v_Sos, v_Drk
 v_Src42, (v_Src42 | !v_Src42)

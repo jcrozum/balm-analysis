@@ -13,8 +13,8 @@ v_BclxL, ((v_pNFkB | v_pSTAT3) & !(v_BAX | (v_BAD | v_p53)))
 v_Bort, (v_Bort | !v_Bort)
 v_CAS3, (v_CAS3 | !v_CAS3)
 v_CDK1, (!(v_p21 | v_p27) & v_Cdc25BC)
-v_CDK2, ((v_CYCE & v_Cdc25A) & !(v_p21 | v_p27))
-v_CDK4, ((v_CYCD & v_Cdc25A) & !(v_p21 | v_p27))
+v_CDK2, (v_CYCE & (v_Cdc25A & !(v_p21 | v_p27)))
+v_CDK4, (v_CYCD & (v_Cdc25A & !(v_p21 | v_p27)))
 v_CDK6, v_CYCD
 v_CIAP, v_TNFaR
 v_CLPARP, v_Cas3
@@ -40,10 +40,10 @@ v_FasR, (v_FasL | v_p53)
 v_GSK3b, !(v_P70S6K | (v_AKT | v_P90RSK))
 v_IGF1, (v_IGF1 | !v_IGF1)
 v_IGF1R, (v_IGF1R | !v_IGF1R)
-v_IKK, (((v_RIP & v_NIK) | v_AKT) | (v_ROS & (v_ATM & v_DNAdam)))
+v_IKK, ((v_RIP & v_NIK) | (v_AKT | (v_ROS & (v_ATM & v_DNAdam))))
 v_IL6, v_pNFkB
 v_IRF4, (v_IRF4 | (v_MYC | v_pNFkB))
-v_IRS, (((v_IGF1R & v_IGF1) | (v_IGF1R & (v_IL6 & v_gp130))) | !(v_P70S6K | v_JNK))
+v_IRS, ((v_IGF1R & v_IGF1) | ((v_IGF1R & (v_IL6 & v_gp130)) | !(v_P70S6K | v_JNK)))
 v_JAK1, (v_IL6 & (v_gp130 & !v_SHP1))
 v_JAK2, (v_IL6 & (v_gp130 & !v_SHP1))
 v_JNK, (v_MKK4 & !v_Prot)

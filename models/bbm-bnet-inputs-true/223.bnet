@@ -59,7 +59,7 @@ v_JAGa, (v_SMAD1 | v_Bcatenin)
 v_JAGp, (v_JAGp | !v_JAGp)
 v_JNK, ((v_ROR | v_RAC1) & v_DSH)
 v_KLF2, v_ShearStress
-v_LEF1, ((v_Bcatenin & !v_GROUCHO) & (v_NRARP | v_LEF1))
+v_LEF1, (v_Bcatenin & (!v_GROUCHO & (v_NRARP | v_LEF1)))
 v_LRP56, (v_WNT7a & !v_DKK1)
 v_LSD1, (v_SIRT1 & !v_NICD)
 v_Lactate, !v_Oxygen

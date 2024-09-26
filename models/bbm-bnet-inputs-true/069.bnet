@@ -9,7 +9,7 @@ v_ICP, ((v_VAC & !v_HapX) | (v_FCplusFe & !v_HapX))
 v_LIP, ((v_RIA & v__Iron) | (v_TAFC & (v_MirB & v_EstB)))
 v_MirB, (v_HapX & !v_SreA)
 v_RIA, !v_SreA
-v_ROS, (((v_Superoxide & !(v_SOD2_3 & (v_ThP & v_Cat1_2))) | (v_ROS & !(v_SOD2_3 & (v_ThP | v_Cat1_2)))) | v_LIP)
+v_ROS, ((v_Superoxide & !(v_SOD2_3 & (v_ThP & v_Cat1_2))) | ((v_ROS & !(v_SOD2_3 & (v_ThP | v_Cat1_2))) | v_LIP))
 v_SOD2_3, v_Yap1
 v_SidA, (v_HapX & !v_SreA)
 v_SreA, (v_LIP & v_sreA)

@@ -8,7 +8,7 @@ v_Dest_compl, ((v_GSK3B_cyto & (v_AXIN2_cyto & v_Bcatenin_nuc)) | (v_GSK3B_cyto 
 v_Ecadherin, (v_Bcatenin_memb & (!v_SNAI1_nuc | ((!v_NOTCH_ic_nuc & !v_SMAD_nuc) | (!v_ZEB1_nuc | (!v_ZEB2 | (!v_TWIST1_nuc | !v_SNAI2_nuc))))))
 v_Ecadherin_CTF, !v_Ecadherin
 v_GLI_cyto, (v_Bcatenin_nuc | (v_SMAD_nuc | v_GLI_nuc))
-v_GLI_nuc, ((v_SMAD_nuc & (v_AKT | (v_MEK | v_GSK3B_cyto))) & v_GLI_cyto)
+v_GLI_nuc, (v_SMAD_nuc & ((v_AKT | (v_MEK | v_GSK3B_cyto)) & v_GLI_cyto))
 v_GSK3B_cyto, (!v_GLI_nuc & !v_AKT)
 v_GSK3B_nuc, (!v_AKT & !v_AXIN2_cyto)
 v_MEK, (v_SOS_GRB2 | (!v_GSK3B_cyto | (v_Bcatenin_nuc | (!(!v_MEK | !v_SNAI1_nuc) | v_Ecadherin_CTF))))

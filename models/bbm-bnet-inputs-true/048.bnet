@@ -46,7 +46,7 @@ v_MalTp, v_MALT
 v_Mig1p, (v_MIG1 & !v_Snf1p)
 v_Mig2p, v_MIG2
 v_Mig3p, (v_MIG3 & !v_Snf1p)
-v_Mth1p, (((v_MTH1 & !v_SCF_grr1) | (v_MTH1 & !(v_Rgt2p | v_Snf3p))) | (v_MTH1 & !v_Yck1p))
+v_Mth1p, ((v_MTH1 & !v_SCF_grr1) | ((v_MTH1 & !(v_Rgt2p | v_Snf3p)) | (v_MTH1 & !v_Yck1p)))
 v_PCK1, v_Cat8p
 v_REG1, (v_REG1 | !v_REG1)
 v_RGT1, (v_RGT1 | !v_RGT1)
@@ -62,9 +62,9 @@ v_SNF4, (v_SNF4 | !v_SNF4)
 v_STD1, (v_STD1 | !v_STD1)
 v_SUC2, !(v_Mig1p | v_Mig2p)
 v_Sip4p, (v_SIP4 & v_Snf1p)
-v_Snf1p, ((v_SNF1 & v_SNF4) & !v_Glc7Reg1)
+v_Snf1p, (v_SNF1 & (v_SNF4 & !v_Glc7Reg1))
 v_Snf3p, (v_glucose_ext & v_SNF3)
-v_Std1p, (((v_STD1 & !v_SCF_grr1) | (v_STD1 & !v_Yck1p)) | (v_STD1 & !(v_Rgt2p | v_Snf3p)))
+v_Std1p, ((v_STD1 & !v_SCF_grr1) | ((v_STD1 & !v_Yck1p) | (v_STD1 & !(v_Rgt2p | v_Snf3p))))
 v_YCK1_2, (v_YCK1_2 | !v_YCK1_2)
 v_Yck1p, v_YCK1_2
 v_galactose_ext, (v_galactose_ext | !v_galactose_ext)

@@ -17,4 +17,4 @@ v_SARS_CoV_1_proteins_complex, (v_SARS_CoV_1_proteins_complex | !v_SARS_CoV_1_pr
 v_TP53_phosphorylated, v_csa1_JNK_complex_cell
 v_TP53_signalling_phenotype, v_TP53_phosphorylated
 v_csa12_JNK_complex_cell, (v_csa12_JNK_complex_cell | !v_csa12_JNK_complex_cell)
-v_csa1_JNK_complex_cell, (((((v_MAP2K4_phosphorylated | v_MAP2K7_phosphorylated) | v_7a) | v_3a) & v_csa12_JNK_complex_cell) | (v_csa12_JNK_complex_cell & v_S))
+v_csa1_JNK_complex_cell, (((v_MAP2K4_phosphorylated | (v_MAP2K7_phosphorylated | (v_7a | v_3a))) & v_csa12_JNK_complex_cell) | (v_csa12_JNK_complex_cell & v_S))

@@ -1,5 +1,6 @@
 bbm-bnet-inputs-random-128
 *.pickle
+*.target.txt
 statistical_test/random_ncf
 statistical_test/random_nk2
 statistical_test/random_nk3

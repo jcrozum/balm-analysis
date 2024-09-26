@@ -1,4 +1,4 @@
-# Biobalm benchmarking artefact
+# Attractor benchmarking
 
 This folder (together with the `models` directory) contains all resources necessary to reproduce
 the benchmark analysis of the biobalm paper. Each benchmark has a script to run it and produces

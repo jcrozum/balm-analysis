@@ -1,42 +1,14 @@
-# balm-analysis
-Analyses of Boolean networks that showcase the Boolean Attractor Landscape Mapper (balm)
+# `biobalm` reproducibility artefact
 
-# requirements
-Requires `balm` and all its dependencies. See https://github.com/jcrozum/balm.
-Only Linux is supported. Users on Windows should use WSL2.
+This archive contains all the code and data necessary to reproduce the results presented in the 
+"Mapping the attractor landscape of Boolean networks" paper.
 
-## instructions for setup
-1. It is recommended that you initialize a virtual environment, e.g., using
-```
-$ python3 -m venv .venv && source .venv/bin/activate
-```
+### Artefact structure
 
+ * `models`: Model files that are used during testing of `biobalm`.
+ * `benchmark-attractor`: Scripts necessary for reproducing the attractor detection comparison between `biobalm`, `aeon`, and `mts-nfvs`, including out measured data.
+ * `benchmark-construction`: Comparison of full succession diagram construction between `biobalm` and `pystablemotifs`.
+ * `benchmark-control`: Comparison of target control between `biobalm` and `pystablemotifs`.
+ * `analysis`: Python scripts and notebooks that were used to generate the figures presented in the paper.
 
-2. Intsall `balm` Python dependencies:
-```
-$ pip3 install -r requirements.txt
-```
-
-3. Install `gringo`, e.g. using
-```
-$ sudo apt install gringo
-```
-
-4. Install `pint` from https://github.com/pauleve/pint. On Ubuntu, for example, you can run this:
-```
-$ wget https://github.com/pauleve/pint/releases/download//2019-05-24/pint_2019-05-24_amd64.deb
-$ sudo apt install ./pint_2019-05-24_amd64.deb
-```
-
-5. Install `mole` from http://www.lsv.fr/~schwoon/tools/mole/, e.g. using this:
-```
-$ wget http://www.lsv.fr/~schwoon/tools/mole/mole-140428.tar.gz
-$ tar -xvf mole-140428.tar.gz
-$ (cd ./mole-140428 && make)
-```
-Note that you will need to make sure that the `mole` command is added to your `PATH`.
-
-6. Install `balm`, e.g.
-```
-$ pip3 install git+https://github.com/jcrozum/balm
-```
+Every part of the artefact has a dedicated README file which should instruct you on how to reproduce the analysis.

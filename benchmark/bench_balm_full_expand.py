@@ -9,7 +9,6 @@ DEPTH_LIMIT = 10_000
 
 bn = BooleanNetwork.from_file(sys.argv[1])
 bn = bn.infer_valid_graph()
-bn = bn.inline_constants(infer_constants=True, repair_graph=True)
 print(f"Simplified network: {bn}")
 
 # Prepare a config which will print progress.

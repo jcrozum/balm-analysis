@@ -20,7 +20,7 @@ TIMEOUT=10m
 
 set -x
 
-./venv/bin/python3 run_bench.py $TIMEOUT models-bbm bench_biobalm_construction.py -p 6
+./venv/bin/python3 run_bench.py $TIMEOUT models-bbm bench_balm_construction.py -p 6
 
 zip -r perf-biobalm-`hostname`.zip _run_* 
 rm -rf _run_*

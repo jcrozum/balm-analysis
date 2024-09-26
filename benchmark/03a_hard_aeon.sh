@@ -11,7 +11,7 @@ set -e
 # Apply memory limit (only works on linux and cannot be done by a child script).
 if [[ -z "${MEMORY_LIMIT}" ]]; then
   echo "Memory limit not set. Defaulting to 32GB per process."
-  MEMORY_LIMIT=67108864
+  MEMORY_LIMIT=33554432
 fi
 
 ulimit -v $MEMORY_LIMIT

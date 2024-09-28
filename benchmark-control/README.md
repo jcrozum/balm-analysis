@@ -2,6 +2,8 @@
 
 This part shows how to compare `biobalm` to `pystablemotifs` when computing control strategies. It works similarly to the attractor benchmark, but is simpler since we use stricter resource limits.
 
+ > Note that the results of `biobalm` and `pystablemotifs` do not always match. We have manually compared these cases and found a previously unresolved issue in `pystablemotifs` that sometimes causes spurious or redundant control strategies to be produced.
+
 To execute the benchmark, run the following commands:
 
 ```

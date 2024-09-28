@@ -1,10 +1,12 @@
 from biodivine_aeon import BooleanNetwork
 from biobalm import SuccessionDiagram
 from biobalm.control import succession_control
+from biobalm.space_utils import is_subspace
 from pathlib import Path
 import sys
 import os
 import pickle
+import functools
 
 NODE_LIMIT = 1_000_000
 DEPTH_LIMIT = 10_000
@@ -35,5 +37,31 @@ target = sd.node_data(min_trap)["space"]
 Path(sys.argv[1].replace(".bnet", ".target.txt")).write_text(repr(target))
 
 # Do the control in biobalm
-interventions_nfvsmotifs = succession_control(sd, target)
-print(len(interventions_nfvsmotifs))
+interventions_nfvsmotifs = succession_control(sd, target, skip_feedforward_successions=True)
+interventions = []
+for x in interventions_nfvsmotifs:
+	print(x)
+	for control_sequence in x.all_control_strategies():
+		if len(control_sequence) == 0:
+			# Empty intervention... works always.
+			interventions.append("[]")
+			continue
+
+		# Merge sequence into one control intervention.
+		control = functools.reduce(lambda x, y: x | y, control_sequence)
+		skip_completely = False
+		for i in reversed(range(len(interventions))):
+			existing_control = interventions[i]
+			if is_subspace(control, existing_control):
+				skip_completely = True
+				break
+			if is_subspace(existing_control, control):
+				del interventions[i]
+		if skip_completely:
+			continue
+		interventions.append(control)
+
+for control in interventions:
+	print(control)
+
+print(len(interventions))

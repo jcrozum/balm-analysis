@@ -119,6 +119,14 @@ Note that it is not required to have all data present to perform the analysis. Y
 results if the `results-raw` only contains data for certain tools or certain datasets (e.g. you only ran
 the easy benchmarks).
 
+## 5. Extended runtime
+
+For the sake of completeness, we also considered a larger timeout of `48h` for `biobalm`. These results
+were computed using the `run_bench.py` script, just as all other experiments, but they can take several
+weeks to complete due to the large timeout.
+
+The relevant outputs are provided in `results-raw-extended.zip`.
+
 ## Other
 
 Finally, we list several commands that are useful for testing individual models. Note that you only

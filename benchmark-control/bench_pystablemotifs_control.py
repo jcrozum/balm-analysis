@@ -23,4 +23,5 @@ ar.summary()
 print(f"{ar.fewest_attractors}, {ar.most_attractors}")
 
 interventions_pystablemotifs = ar.reprogram_to_trap_spaces(target)
+print(interventions_pystablemotifs)
 print(len(interventions_pystablemotifs))
